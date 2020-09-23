@@ -1,7 +1,7 @@
 on: [push, pull_request]
-validate:
-  build:
-    name: build
+jobs:
+  validate:
+    name: validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
