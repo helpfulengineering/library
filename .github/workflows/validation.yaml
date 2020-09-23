@@ -8,7 +8,7 @@ jobs:
       - name: yq valid yaml
         uses: mikefarah/yq@3.4.0
         with:
-          cmd: for file in ./ok*/*.y*ml; do yq v "$i" || echo "'${i}' is invalid" && exit 1; done
+          cmd: for file in ./ok*/*.y*ml; do yq v "$i" || echo "'${file}' is invalid" && exit 1; done
       - name: lint yaml
         uses: ibiqlik/action-yamllint@v1
         with:
