@@ -1,0 +1,15 @@
+on: [push, pull_request]
+validate:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: yq valid yaml
+        uses: mikefarah/yq@3.4.0
+        with:
+          cmd: for file in ./ok*/*.y*ml; do yq v "$i" || echo "'${i}' is invalid" && exit 1; done
+      - name: lint yaml
+        uses: ibiqlik/action-yamllint@v1
+        with:
+          file_or_dir: okh/*.y*ml
