@@ -13,5 +13,6 @@ jobs:
         uses: ibiqlik/action-yamllint@v1
         with:
           file_or_dir: okh/*.y*ml
-#         can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
+          # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
+          # for status check annotations in GitHub
           format: parsable 
