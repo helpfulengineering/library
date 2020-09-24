@@ -1,0 +1,52 @@
+title: Origami Face Shield
+description: >-
+  Description of the faceshield
+  Helpful Engineering (HE) has designed new, low-cost, disposable facial protection (the Origami Face Shield).
+  Small scale production cost is $0.88 USD each. Mass production drives unit cost to around $0.55 USD.
+  This design is production ready, validated, and easy to scale.
+  These shields can be both mass and locally produced in all 50 states and ship flat, allowing for fast delivery.
+intended-use: Protection from particulates and contagion.
+keywords:
+  - face shield
+project-link: https://www.maskproject.tech/face-shield-design
+image: https://www.maskproject.tech/web/image/656/DSCF5508-SZD.jpg
+made: true
+made-independently: true
+license:
+  hardware: CERN-OHL-P-2.0
+  documentation: CC-BY-4.0
+  software:
+licensor:
+  affiliation: Helpful
+  email: info@helpfulengineering.com
+okh-manifest-version: 1.0.0
+date-created: 2020-08-21
+date-updated: 2020-08-21
+manifest-author:
+  name: Deepti Sawhney
+  affiliation: Helpful
+  email: deeptisawhney22@gmail.com
+manifest-language: en-US
+contact:
+  affiliation: Helpful
+  email: info@helpfulengineering.org
+version: "1"
+development-stage: product
+documentation-home: https://bit.ly/2QVyDZp
+archive-download: https://bit.ly/2QVyDZp
+design-files:
+  - path: https://drive.google.com/drive/folders/1UApAfXhfFJ3iLGWKI0QLaLByjaOugUFs
+    title: Origami-Face-Shield
+documentation-language: en-US
+schematics:
+  - path: https://bit.ly/2yg9wd3
+    title: Manufacturing patterns and files
+bom: " Clear PET film Thickness: 5-10 mil Roll stock, width: 13”-48”"
+making-instructions:
+  - path: https://bit.ly/2WQwgL8
+    title: Assembly instructions
+  - path: "Assembly instructions:"
+    title: "Assembly video:"
+manufacturing-files:
+  - path: https://bit.ly/2yg9wd3
+    title: Manufacturing patterns and files
