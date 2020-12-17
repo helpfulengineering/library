@@ -1,0 +1,62 @@
+title: CoVisor Mk II Protective Face Shield
+description: The CoVisor Mk II Protective Face Shield is a clear plastic shield that is
+  held on the user's head by means of a Head Band and Adjustable Strap. The
+  Clear Screen provides a physical barrier which prevents airborne droplets
+  making contact with the user’s face and eyes, where they may cause infection.
+  The face shield requires assembly before use (see Assembly Instructions).
+  Other PPE is also required to protect against airborne biological hazards. The
+  CoVisor Mk II has been designed to be compatible with most types of PPE such
+  as protective face masks, however compatibility with different PPE products
+  should be checked before the CoVisor Mk II is used.
+intended-use: >-2
+   This product is designed to provide some protection against contact with airborne droplets that may
+  constitute a biological hazard. It is not for use to protect against mechanical impacts or for protection while operating machinery or driving.
+project-link: https://covisor.org/
+image: https://covisor.org/wp-content/uploads/CoVisor_faceshield_all_3.jpg
+made: true
+made-independently: true
+license:
+  hardware: CERN-OHL-1.2
+licensor:
+  name: EN 166:2001 / EU 2016/425
+okh-manifest-version: 1.0.0
+date-created: 2020-12-01
+date-updated: 2020-12-02
+manifest-author:
+  name: Deepti Sawhney
+  affiliation: Helpful Engineering
+  email: deeptisawhney22@gmail.com
+manifest-language: en-US
+contact:
+  name: " Sam Lanyon"
+  affiliation: Helpful Engineering
+  email: hello@conceptshed.com
+version: 1.0.0
+development-stage: product
+documentation-home: https://covisor.org/
+archive-download: https://covisor.org/
+documentation-language: en-US
+schematics:
+  - path: https://covisor.org/open-source
+    title: Accessories
+bom: A. Clear Screen (PET) B. Adjustable Strap (PP/TPS blend)  C. Head Band (PP/TPS
+  blend) D. Screen Support (PP/TPS blend)  E. Head Cover (*supplied with Maxi
+  only - PET)
+tool-list: Injection Moulding equipment
+making-instructions:
+  - path: https://covisor.org/wp-content/uploads/CoVisor-Instructions-web.pdf
+    title: Assembly Guide
+health-safety-notice: >-
+  INTENDED USE AND LIMITATIONS OF USE: This product is designed to provide some
+  protection against contact with airborne droplets that may
+
+  constitute a biological hazard. It is not for use to protect against mechanical impacts or for protection while operating machinery or driving.
+standards-used:
+  - standard-title: EN 166:2001
+    publisher: "Notified Body: Module B and C2 - SATRA Technology Europe Ltd, Bracetown
+      Business Park, Clonee, D15YN2P. Republic of Ireland (Notified Body 2777)."
+    reference: CE 2777
+    certification:
+      - certifier: Creative Commons Attribution 4.0
+        date-awarded: 2020-06-24
+        link: https://covisor.org/wp-content/uploads/CoVisor-Instructions-web.pdf
