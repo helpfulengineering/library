@@ -17,21 +17,13 @@ manifest-author:
   affiliation: str(required=False)
   email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
 
-# manifest-language: [language-code]-[region] 
+manifest-language: str(required=False) # [language-code]-[region] 
 
-# documentation-language: [language-code]-[region] 
+documentation-language: str(required=False) # [language-code]-[region] 
 
-# manifest-is-translation:  
-#   title: [value]                           # text | Title of the original
-#   manifest: [value]                        # URL - Absolute path | OKH manifest location
-#   web: [value]                             # URL - Absolute path | web presence location
-#   lang: [language]-[region]                # language of original
+manifest-is-translation: include('manifest-is-translation', required=False)
 
-# documentation-is-translation:  
-#   title: [value]                           # text | Title of the original
-#   manifest: [value]                        # URL - Absolute path | OKH manifest location
-#   web: [value]                             # URL - Absolute path | web presence location
-#   lang: [language]-[region]                # language of original
+documentation-is-translation: include('manifest-is-translation', required=False)
 
 # # Properties
 
@@ -75,14 +67,7 @@ manifest-author:
 
 # made-independently: [true/false]           # boolean - true or false
 
-# standards-used:
-#   - standard-title: [value]                # Required where used | Title of the standard used in developing the design or documentation
-#     publisher: [value]                     # Publisher of the standard
-#     reference: [value]                     # Reference indentifier of the standard (e.g. ISO 9001)
-#     certification:                         # If certification has been granted confirming compliance with the standard
-#       - certifier: [value]                 # Individual or organisation granting the certification. Use "Self" for self-certification
-#         date-awarded: [value]              # Date certification was granted
-#         link: [value]                      # Link to evidence of certification (e.g. certificate). Use an an absolute path to an external resource or an absolute or relative path to evidence within the documentation.
+standards-used: list(include('standards-used'), required=False)
 
 # derivative-of:  
 #   title: [value]                           # text | Title of the original
@@ -167,3 +152,28 @@ manifest-author:
 
 # # User defined Fields 
 # # Include any custom / extended fields here
+---
+manifest-is-translation: 
+  title: str(required=False) # text | Title of the original
+  manifest: include('url-type') # URL - Absolute path | OKH manifest location
+  web: include('url-type') # URL - Absolute path | web presence location
+  lang: str(required=False) # language of original [language]-[region]
+
+documentation-is-translation:  
+  title: str(required=False) # text | Title of the original
+  manifest: include('url-type') # URL - Absolute path | OKH manifest location
+  web: include('url-type') # URL - Absolute path | web presence location
+  lang: str(required=False) # language of original [language]-[region]
+
+standards-used:
+  standard-title: str() # Required where used | Title of the standard used in developing the design or documentation
+  publisher: str(required=False) # Publisher of the standard
+  reference: str(required=False) # Reference indentifier of the standard (e.g. ISO 9001)
+  certification: list(include('certification', required=False))
+---
+url-type: regex('[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)')
+---
+certification:                         # If certification has been granted confirming compliance with the standard
+  certifier: str() # Individual or organisation granting the certification. Use "Self" for self-certification
+  date-awarded: day() # Date certification was granted
+  link: str() # Link to evidence of certification (e.g. certificate). Use an an absolute path to an external resource or an absolute or relative path to evidence within the documentation.
