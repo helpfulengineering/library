@@ -10,92 +10,76 @@
 # work in progress -- not compatible with yamale validator until all fields have
 # been converted
 
-date-created: day()
-date-updated: day()
-manifest-author:
-  name: str()
-  affiliation: str(required=False)
-  email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$')
+# [ ! ] however! there must be project-link || documentation-home
+# ^^ we could check this in an edit of yamale since I know how to do that now ~ SEA
 
-# manifest-language: [language-code]-[region] 
+date-created: day(required=False)
+date-updated: day(required=False)
+manifest-author:
+  name: str(required=True)
+  affiliation: str(required=False)
+  email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', required=False)
+
+# manifest-language: [language-code]-[region], ala English-UK. not required but how do we feel abt Klingon-Z
 
 # documentation-language: [language-code]-[region] 
 
-# manifest-is-translation:  
-#   title: [value]                           # text | Title of the original
-#   manifest: [value]                        # URL - Absolute path | OKH manifest location
-#   web: [value]                             # URL - Absolute path | web presence location
-#   lang: [language]-[region]                # language of original
+manifest-is-translation: include('manifest-is-translation', required=False)
 
-# documentation-is-translation:  
-#   title: [value]                           # text | Title of the original
-#   manifest: [value]                        # URL - Absolute path | OKH manifest location
-#   web: [value]                             # URL - Absolute path | web presence location
-#   lang: [language]-[region]                # language of original
+documentation-is-translation: include('manifest-is-translation', required=False)
 
 # # Properties
+title: str(required=True)                    # required | text | A title to identify the thing
 
-# title: [value]                             # required | text | A title to identify the thing
+description: str(required=True)              # required | paragraph. Longer string??
 
-# description: |                             # required | paragraph
-#   [value]
+intended-use: str(required=False)            # recommended | Paragraph
 
-# intended-use: |                            # recommended | Paragraph
-#   [value]
-
-# keywords:                                  # At least one keyword is recommended | text array 
+# keywords:                                  # At least one keyword is recommended | text LIST! that's a thing! 
 #   - [keyword 1]
 #   - [keyword 2]
 
-# project-link: [value]                      # At least project-link or documentation-home is required, otherwise recommended | absolute path URL
+project-link: regex('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
 
-# health-safety-notice: |                    # paragraph
-#   [value]
+health-safety-notice: str(required=False)    # paragraph
 
-# contact:
-#   name: [value]                            # text
-#   affiliation: [value]                     # text
-#   email: [value]                           # email address
+contact:
+   name: str(required=False)
+   affiliation: str(required=False)
+   email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', required=False)
 #   social:
-#     - platform: [value]                    # text
-#       user-handle: [value]                 # text
+#     - platform: [value]                    # text, 
+#       user-handle: [value]                 # text, 
 
-# contributors:                              # recommended
+# contributors:                              # recommended list!!
 #   - name: [contributor 1]                  # text
 #     affiliation: [value]                   # text
 #     email: [value]                         # email address
 
 # image: [value]                             # recommended | absolute or relative path
 
-# version: [value]                           # text
+version: str(required=False)                 # text
 
-# development-stage: [value]                 # text
+development-stage: str(required=False)       # text
 
-# made: [true/false]                         # boolean - true or false
+made: bool(required=False)                         # boolean - true or false
 
-# made-independently: [true/false]           # boolean - true or false
+made-independently: bool(required=False)           # boolean - true or false
 
-# standards-used:
-#   - standard-title: [value]                # Required where used | Title of the standard used in developing the design or documentation
-#     publisher: [value]                     # Publisher of the standard
-#     reference: [value]                     # Reference indentifier of the standard (e.g. ISO 9001)
-#     certification:                         # If certification has been granted confirming compliance with the standard
-#       - certifier: [value]                 # Individual or organisation granting the certification. Use "Self" for self-certification
-#         date-awarded: [value]              # Date certification was granted
-#         link: [value]                      # Link to evidence of certification (e.g. certificate). Use an an absolute path to an external resource or an absolute or relative path to evidence within the documentation.
+standards-used: list(include('standards-used'), required=False)
 
-# derivative-of:  
-#   title: [value]                           # text | Title of the original
+derivative-of:                               # started work on this, variant + sub but anyone else can finish it
+   title: str(required=False)                           # text | Title of the original
 #   manifest: [value]                        # URL - Absolute path | OKH manifest location
 #   web: [value]                             # URL - Absolute path | web presence location
 
-# variant-of:  
-#   title: [value]                           # text | Title of the original
+variant-of:  
+   title: str(required=False)                           # text | Title of the original
 #   manifest: [value]                        # URL - Absolute path | OKH manifest location
 #   web: [value]                             # URL - Absolute path | web presence location
 
-# sub:  
-#   title: [sub 1]                           # text | Title of the original
+sub:  
+   title: str(required=False)                           # text | Title of the original
 #   manifest: [value]                        # URL - Absolute path | OKH manifest location
 #   web: [value]                             # URL - Absolute path | web presence location
 
@@ -106,22 +90,23 @@ manifest-author:
 #   documentation: [value]                   # recommended | The license under which the documentation is released
 #   software: [value]                        # recommended where software is used | The license under which the software is released
 
-# licensor: 
-#   name: [value]                            # text
-#   affiliation: [value]                     # text
-#   email: [value]                           # email address
+licensor: 
+   name: str(required=False)                 # should I be concerned that licensor isn't required??
+   affiliation: str(required=False)
+   email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', required=False)
 
 # # Documentation
 
 # documentation-home: [value]               # At least one of the project-link or documentation-home fields is required | absolute path
+                                            # again, this is conditionally required and unassume can do a thing here
 
 # archive-download: [value]                 # Absolute or relative path
 
-# design-files:                             # recommended
+# design-files:                             # recommended, list
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
-# schematics:                               # recommended where applicable 
+# schematics:                               # recommended where applicable, list 
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
@@ -129,35 +114,35 @@ manifest-author:
 
 # tool-list: [value]                        # recommended | absolute or relative path | Direct the maker to a list of tools required to make the thing
 
-# making-instructions:                      # recommended
+# making-instructions:                      # recommended, list
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
-# manufacturing-files:                      # recommended where applicable
+# manufacturing-files:                      # recommended where applicable, list
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
-# risk-assessment:                          # recommended 
+# risk-assessment:                          # recommended, list 
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
-# tool-settings:                            # recommended where applicable
+# tool-settings:                            # recommended where applicable, list
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
 # quality-instructions:
+#   - path: [value]                         # Absolute or relative path, list
+#     title: [value]                        # text
+
+# operating-instructions:                   # recommended, list
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
-# operating-instructions:                   # recommended
+# maintenance-instructions: [value]         # recommended, list
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
-# maintenance-instructions: [value]         # recommended
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# disposal-instructions: [value]            # recommended
+# disposal-instructions: [value]            # recommended, list
 #   - path: [value]                         # Absolute or relative path
 #     title: [value]                        # text
 
@@ -167,3 +152,22 @@ manifest-author:
 
 # # User defined Fields 
 # # Include any custom / extended fields here
+---
+manifest-is-translation: 
+  title: str(required=False) # text | Title of the original
+  manifest: include('url-type') # URL - Absolute path | OKH manifest location
+  web: include('url-type') # URL - Absolute path | web presence location
+  # lang: str(required=False) # language of original [language]-[region] (rework this stat)
+
+standards-used:
+  standard-title: str() # Required where used | Title of the standard used in developing the design or documentation
+  publisher: str(required=False) # Publisher of the standard
+  reference: str(required=False) # Reference indentifier of the standard (e.g. ISO 9001)
+  certification: list(include('certification', required=False))
+---
+url-type: regex('[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)')
+---
+certification:                         # If certification has been granted confirming compliance with the standard
+  certifier: str() # Individual or organisation granting the certification. Use "Self" for self-certification
+  date-awarded: day() # Date certification was granted
+  link: regex('[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)') # Link to evidence of certification (e.g. certificate). Use an an absolute path to an external resource or an absolute or relative path to evidence within the documentation.
