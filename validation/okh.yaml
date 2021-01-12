@@ -22,7 +22,7 @@ manifest-author:
 
 # manifest-language: [language-code]-[region], ala English-UK. not required but how do we feel abt Klingon-Z
 
-documentation-language: str(required=False) # [language-code]-[region], must update 
+# documentation-language: [language-code]-[region] 
 
 manifest-is-translation: include('manifest-is-translation', required=False)
 
