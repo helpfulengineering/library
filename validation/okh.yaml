@@ -102,53 +102,22 @@ standards-used: list(include('standards-used'), required=False)
 
 # archive-download: [value]                 # Absolute or relative path
 
-# design-files:                             # recommended
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# schematics:                               # recommended where applicable 
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
+design-files: list(include('list-item'), required=False)
+schematics: list(include('list-item'), required=False)
 
 # bom: [value]                              # recommended | absolute or relative path | Direct the maker to the Bill of Materials
 
 # tool-list: [value]                        # recommended | absolute or relative path | Direct the maker to a list of tools required to make the thing
 
-# making-instructions:                      # recommended
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# manufacturing-files:                      # recommended where applicable
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# risk-assessment:                          # recommended 
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# tool-settings:                            # recommended where applicable
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# quality-instructions:
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# operating-instructions:                   # recommended
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# maintenance-instructions: [value]         # recommended
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# disposal-instructions: [value]            # recommended
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
-
-# software:                                 # recommended where applicable | Source code or executable software that the thing uses
-#   - path: [value]                         # Absolute or relative path
-#     title: [value]                        # text
+making-instructions: list(include('list-item'), required=False) 
+manufacturing-files: list(include('list-item'), required=False)
+risk-assessment: list(include('list-item'), required=False)
+tool-settings: list(include('list-item'), required=False) 
+quality-instructions: list(include('list-item'), required=False)
+operating-instructions: list(include('list-item'), required=False)
+maintenance-instructions: list(include('list-item'), required=False)
+disposal-instructions: list(include('list-item'), required=False)
+software: list(include('list-item'), required=False)
 
 # # User defined Fields 
 # # Include any custom / extended fields here
@@ -170,6 +139,10 @@ standards-used:
   publisher: str(required=False) # Publisher of the standard
   reference: str(required=False) # Reference indentifier of the standard (e.g. ISO 9001)
   certification: list(include('certification', required=False))
+
+list-item:
+  path: include('url-type', required=False)
+  title: str(required=False)
 ---
 url-type: regex('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
 ---
