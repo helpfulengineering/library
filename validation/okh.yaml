@@ -27,30 +27,27 @@ documentation-is-translation: include('manifest-is-translation', required=False)
 
 # # Properties
 
-# title: [value]                             # required | text | A title to identify the thing
+title: str(required=True)                    # required | text | A title to identify the thing
 
-# description: |                             # required | paragraph
-#   [value]
+description: str(required=True)              # required | paragraph. Longer string??
 
-# intended-use: |                            # recommended | Paragraph
-#   [value]
+intended-use: str(required=False)            # recommended | Paragraph
 
 # keywords:                                  # At least one keyword is recommended | text array 
 #   - [keyword 1]
 #   - [keyword 2]
 
-# project-link: [value]                      # At least project-link or documentation-home is required, otherwise recommended | absolute path URL
+project-link: regex('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
 
-# health-safety-notice: |                    # paragraph
-#   [value]
+health-safety-notice: str(required=False)    # paragraph
 
-# contact:
-#   name: [value]                            # text
-#   affiliation: [value]                     # text
-#   email: [value]                           # email address
+contact:                                     # currently listed as required, if someone could 
+   name: str(required=False)                 # define this fully below so we can include(it), that would help
+   affiliation: str(required=False)          # ^ sea 
+   email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', required=False)
 #   social:
-#     - platform: [value]                    # text
-#       user-handle: [value]                 # text
+#     - platform: [value]                    # text, 
+#       user-handle: [value]                 # text, 
 
 # contributors:                              # recommended
 #   - name: [contributor 1]                  # text
@@ -59,13 +56,13 @@ documentation-is-translation: include('manifest-is-translation', required=False)
 
 # image: [value]                             # recommended | absolute or relative path
 
-# version: [value]                           # text
+version: str(required=False)                 # text
 
-# development-stage: [value]                 # text
+development-stage: str(required=False)       # text
 
-# made: [true/false]                         # boolean - true or false
+made: bool(required=False)                         # boolean - true or false
 
-# made-independently: [true/false]           # boolean - true or false
+made-independently: bool(required=False)           # boolean - true or false
 
 standards-used: list(include('standards-used'), required=False)
 
@@ -91,10 +88,7 @@ standards-used: list(include('standards-used'), required=False)
 #   documentation: [value]                   # recommended | The license under which the documentation is released
 #   software: [value]                        # recommended where software is used | The license under which the software is released
 
-# licensor: 
-#   name: [value]                            # text
-#   affiliation: [value]                     # text
-#   email: [value]                           # email address
+licensor: include('nonessential-contact', required=False)
 
 # # Documentation
 
@@ -106,7 +100,6 @@ design-files: list(include('list-item'), required=False)
 schematics: list(include('list-item'), required=False)
 
 # bom: [value]                              # recommended | absolute or relative path | Direct the maker to the Bill of Materials
-
 # tool-list: [value]                        # recommended | absolute or relative path | Direct the maker to a list of tools required to make the thing
 
 making-instructions: list(include('list-item'), required=False) 
@@ -143,6 +136,11 @@ standards-used:
 list-item:
   path: include('url-type', required=False)
   title: str(required=False)
+
+nonessential-contact:
+  name: str(required=False)                 
+  affiliation: str(required=False)
+  email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', required=False)
 ---
 url-type: regex('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
 ---
