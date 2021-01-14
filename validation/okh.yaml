@@ -44,10 +44,7 @@ health-safety-notice: str(required=False)    # paragraph
 
 contact: include('contact-kit', required=False) # currently listed as required,
 
-# contributors:                              # recommended
-#   - name: [contributor 1]                  # text
-#     affiliation: [value]                   # text
-#     email: [value]                         # email address
+contributors: list(include('nonessential-contact'),required=False)                             # recommended
 
 # image: [value]                             # recommended | absolute or relative path
 
