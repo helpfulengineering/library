@@ -61,20 +61,9 @@ made-independently: bool(required=False)           # boolean - true or false
 
 standards-used: list(include('standards-used'), required=False)
 
-# derivative-of:  
-#   title: [value]                           # text | Title of the original
-#   manifest: [value]                        # URL - Absolute path | OKH manifest location
-#   web: [value]                             # URL - Absolute path | web presence location
-
-# variant-of:  
-#   title: [value]                           # text | Title of the original
-#   manifest: [value]                        # URL - Absolute path | OKH manifest location
-#   web: [value]                             # URL - Absolute path | web presence location
-
-# sub:  
-#   title: [sub 1]                           # text | Title of the original
-#   manifest: [value]                        # URL - Absolute path | OKH manifest location
-#   web: [value]                             # URL - Absolute path | web presence location
+derivative-of:  include('relative-of', required=False)
+variant-of: include('relative-of', required=False) 
+sub: include('relative-of', required=False) 
 
 # # License 
 
@@ -122,6 +111,11 @@ documentation-is-translation:
   web: include('url-type') # URL - Absolute path | web presence location
   lang: str(required=False) # language of original [language]-[region]
 
+relative-of:
+  title: str(required=False) # text | Title of the original
+  manifest: include('url-type') # URL - Absolute path | OKH manifest location
+  web: include('url-type') # URL - Absolute path | web presence location
+
 standards-used:
   standard-title: str() # Required where used | Title of the standard used in developing the design or documentation
   publisher: str(required=False) # Publisher of the standard
@@ -142,6 +136,7 @@ contact-kit:
   affiliation: str(required=False)
   email: regex('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$', required=False)
   social: list(include('social-list-item'), required=False)
+
 ---
 url-type: regex('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')
 ---
