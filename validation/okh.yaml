@@ -57,7 +57,7 @@ standards-used: list(include('standards-used'), required=False)
 
 derivative-of:  include('relative-of', required=False)
 variant-of: include('relative-of', required=False) 
-sub: include('relative-of', required=False) 
+sub: include('relative-of', required=False) # should this be a list
 
 # # License 
 
@@ -72,13 +72,13 @@ licensor: include('nonessential-contact', required=False)
 
 # documentation-home: [value]               # At least one of the project-link or documentation-home fields is required | absolute path
 
-# archive-download: [value]                 # Absolute or relative path
+archive-download: include('url-type', required=False)                 # Absolute or relative path
 
 design-files: list(include('list-item'), required=False)
 schematics: list(include('list-item'), required=False)
 
-# bom: [value]                              # recommended | absolute or relative path | Direct the maker to the Bill of Materials
-# tool-list: [value]                        # recommended | absolute or relative path | Direct the maker to a list of tools required to make the thing
+bom: include('url-type', required=False)                              # recommended | absolute or relative path | Direct the maker to the Bill of Materials
+tool-list: include('url-type', required=False)                        # recommended | absolute or relative path | Direct the maker to a list of tools required to make the thing
 
 making-instructions: list(include('list-item'), required=False) 
 manufacturing-files: list(include('list-item'), required=False)
