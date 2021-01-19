@@ -10,6 +10,7 @@
 # work in progress -- not *fully* compatible with yamale validator until all fields have
 # been converted
 # ps, we're keeping regex errors for emails + url whether they're required or not bc of web dev things ~ sea
+# PPS [!] THIS IS THE PROJECT-LINK version.
 
 date-created: day()
 date-updated: day()
@@ -57,7 +58,7 @@ standards-used: list(include('standards-used'), required=False)
 
 derivative-of:  include('relative-of', required=False)
 variant-of: include('relative-of', required=False) 
-sub: include('relative-of', required=False) # should this be a list
+sub: any(include('relative-of'), list(include('relative-of')), required=False) # should this be a list
 
 # # License 
 
@@ -70,7 +71,7 @@ licensor: include('nonessential-contact', required=False)
 
 # # Documentation
 
-# documentation-home: [value]               # At least one of the project-link or documentation-home fields is required | absolute path
+documentation-home: include('url-type', required=False)               # At least one of the project-link or documentation-home fields is required | absolute path
 
 archive-download: include('url-type', required=False)                 # Absolute or relative path
 
