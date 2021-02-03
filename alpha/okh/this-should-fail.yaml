@@ -1,24 +1,34 @@
 # ---
 # foo:
-# bar:
+# bar: this still fails btw
 # what: [][]
 # standards-used:
 #   - foo: bar
 #   - sarah: tested okh.yaml by running yamale with below
 #   - uncommented: using valid spdx params as values here
  
-#license:
-#  - hardware: CC-BY-NC-SA-4.0 
-#    software: CC-BY-ND-1.0 
-#    documentation: CC-BY-ND-2.0
-#  - hardware: CC-BY-ND-3.0
-#    software: CC-BY-ND-2.5
-#    documentation: CC-BY-ND-4.0
-#  - hardware: CC-BY-SA-1.0
-#    software: CC-BY-SA-2.0
-#    documentation: CC-BY-SA-2.5 
-#  - hardware: CC-BY-sa-3.0
-#    software: CC-BY-sa-4.0
-#    documentation: CC-BY-SA-2.0-UK 
-#  - hardware: CC-BY-SA-3.0-AT 
-#    software: CC-PDDC
+license:
+  - hardware: cookie # cookie
+    software: AAL 
+    documentation: Abstyles
+  - hardware: Adobe 2006
+    software: Adobe-Glyph
+    documentation: ADSL
+  - hardware: AFL-1.1
+    software: copyleft-next-0.3.0
+    documentation: FSFULLR 
+  - hardware: CERN-OHL-W-2.0
+    software: CNRI-Jython
+    documentation: Artistic-1.0-Perl 
+  - hardware: LPPL-1.3a
+    software: CECILL-C
+    documentation: BSD-3-Clause-No-Nuclear-License-2014
+  - hardware: GFDL-1.2-no-invariants-or-later
+    software: CECILL-C
+    documentation: BSD-3-Clause-No-Nuclear-License-2014 
+  - hardware: GFDL-1.2-no-invariants-or-later
+    software: CECILL-C
+    documentation: BSD-3-Clause-No-Nuclear-License-2014
+  - hardware: GFDL-1.2-no-invariants-or-later
+    software: CECILL-C
+    documentation: BSD-3-Clause-No-Nuclear-License-2014
