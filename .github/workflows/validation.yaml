@@ -3,33 +3,22 @@ jobs:
   validate:
     name: validate
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        release: ['alpha', 'beta', 'stable']
     steps:
       - uses: actions/checkout@v2
       # - name: yq valid yaml
       #   uses: mikefarah/yq@3.4.0
       #   with:
-      #     cmd: for file in ./ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
-      - name: lint alpha yaml
+      #     cmd: for file in ./${{ matrix.release }}/ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
+      - name: lint ${{ matrix.release }} yaml
         uses: ibiqlik/action-yamllint@v1
         with:
-          file_or_dir: alpha/ok*/*.y*ml
-          # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
-          # for status check annotations in GitHub
-          format: parsable
-      - name: lint beta yaml
-        uses: ibiqlik/action-yamllint@v1
-        with:
-          file_or_dir: beta/ok*/*.y*ml
-          # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
-          # for status check annotations in GitHub
-          format: parsable
-      - name: lint stable yaml
-        uses: ibiqlik/action-yamllint@v1
-        # Should set this to false when a `stable/okh/okh-some=file.yml` is committed
-        continue-on-error: true
-        with:
-          file_or_dir: stable/ok*/*.y*ml
+          file_or_dir: ${{ matrix.release }}/ok*/*.y*ml
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
           # for status check annotations in GitHub
           format: parsable
       - uses: helpfulengineering/ok-validate@gh-action
+        with:
+          path: ${{ matrix.release }}/
