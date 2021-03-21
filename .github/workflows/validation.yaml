@@ -25,6 +25,8 @@ jobs:
           format: parsable
       - name: lint stable yaml
         uses: ibiqlik/action-yamllint@v1
+        # Should set this to false when a `stable/okh/okh-some=file.yml` is committed
+        continue-on-error: true
         with:
           file_or_dir: stable/ok*/*.y*ml
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
