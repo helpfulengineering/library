@@ -9,10 +9,24 @@ jobs:
       #   uses: mikefarah/yq@3.4.0
       #   with:
       #     cmd: for file in ./ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
-      - name: lint yaml
+      - name: lint alpha yaml
         uses: ibiqlik/action-yamllint@v1
         with:
-          file_or_dir: okh/*.y*ml
+          file_or_dir: alpha/ok*/*.y*ml
+          # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
+          # for status check annotations in GitHub
+          format: parsable
+      - name: lint beta yaml
+        uses: ibiqlik/action-yamllint@v1
+        with:
+          file_or_dir: beta/ok*/*.y*ml
+          # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
+          # for status check annotations in GitHub
+          format: parsable
+      - name: lint stable yaml
+        uses: ibiqlik/action-yamllint@v1
+        with:
+          file_or_dir: stable/ok*/*.y*ml
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
           # for status check annotations in GitHub
           format: parsable
