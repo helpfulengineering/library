@@ -5,14 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: yq valid yaml
-        uses: mikefarah/yq@3.4.0
-        with:
-          cmd: for file in ./ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
+      # - name: yq valid yaml
+      #   uses: mikefarah/yq@3.4.0
+      #   with:
+      #     cmd: for file in ./ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
       - name: lint yaml
         uses: ibiqlik/action-yamllint@v1
         with:
           file_or_dir: okh/*.y*ml
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
           # for status check annotations in GitHub
-          format: parsable 
+          format: parsable
+      - uses: helpfulengineering/ok-validate@gh-action
