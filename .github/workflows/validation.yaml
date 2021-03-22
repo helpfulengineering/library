@@ -12,7 +12,12 @@ jobs:
       #   uses: mikefarah/yq@3.4.0
       #   with:
       #     cmd: for file in ./${{ matrix.release }}/ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
+      - name: check for yaml files
+        id: has-yaml-files
+        run: |
+          echo "::set-output name=num-yaml-files::$(find ${{ matrix.release }} -name "*.y*ml" -printf '.' | wc -m | xargs)"
       - name: lint ${{ matrix.release }} yaml
+        if: ${{ steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         uses: ibiqlik/action-yamllint@v1
         with:
           file_or_dir: ${{ matrix.release }}/ok*/*.y*ml
@@ -20,5 +25,6 @@ jobs:
           # for status check annotations in GitHub
           format: parsable
       - uses: helpfulengineering/ok-validate@gh-action
+        if: ${{ steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         with:
           path: ${{ matrix.release }}/
