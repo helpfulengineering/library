@@ -1,4 +1,10 @@
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   validate:
     name: validate
@@ -24,7 +30,8 @@ jobs:
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
           # for status check annotations in GitHub
           format: parsable
-      - uses: helpfulengineering/ok-validate@gh-action
+      - name: open knowledge framework validation
+        uses: helpfulengineering/ok-validate@gh-action
         if: ${{ steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         with:
           path: ${{ matrix.release }}/
