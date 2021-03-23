@@ -80,4 +80,6 @@ health-safety-notice: These instructions do not guarantee protection against tra
   ensuring compliance with all applicable laws and regulations. Desperate times
   call for desperate measures. Stay safe.
 standards-used:
-  - null
+  - standard-title: ASTM
+    publisher: ASTM International
+    reference: F1862
