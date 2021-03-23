@@ -39,7 +39,9 @@ contact:
     - platform: https://www.instagram.com/themakermask/
       user-handle: https://www.instagram.com/themakermask/
 contributors:
-  - null
+  - name: Dr. Jocelyn Songer
+    affiliation: Helpful Engineering
+    email: info@helpfulengineering.org
 version: "Beta "
 development-stage: product
 documentation-home: https://makermask.org/masks/origami-fitted-mask/
