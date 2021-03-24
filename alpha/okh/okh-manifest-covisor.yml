@@ -60,3 +60,4 @@ standards-used:
       - certifier: Creative Commons Attribution 4.0
         date-awarded: 2020-06-24
         link: https://covisor.org/wp-content/uploads/CoVisor-Instructions-web.pdf
+should-cause-failure: true
