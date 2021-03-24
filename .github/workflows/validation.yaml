@@ -41,7 +41,7 @@ jobs:
         uses: helpfulengineering/ok-validate@gh-action-pr
         if: ${{ github.event_name == 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         with:
-          file-restrictions: ${{ steps.changed-files.outputs.added_modified }}
+          file-restrictions: ${{ steps.changed-files.outputs.all }}
           path: ${{ matrix.release }}/
       - name: open knowledge framework validation
         uses: helpfulengineering/ok-validate@v0.0.3
