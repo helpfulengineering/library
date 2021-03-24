@@ -31,7 +31,7 @@ jobs:
           # for status check annotations in GitHub
           format: parsable
       - name: open knowledge framework validation
-        uses: helpfulengineering/ok-validate@gh-action
+        uses: helpfulengineering/ok-validate@v0.0.1
         if: ${{ steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         with:
           path: ${{ matrix.release }}/
