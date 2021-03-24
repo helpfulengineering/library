@@ -37,14 +37,14 @@ jobs:
         with:
           format: space-delimited
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: open knowledge framework validation
-        uses: helpfulengineering/ok-validate@gh-action-pr
+      - name: open knowledge framework validation (pull request)
+        uses: helpfulengineering/ok-validate@v0.0.4
         if: ${{ github.event_name == 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         with:
           file-restrictions: ${{ steps.changed-files.outputs.all }}
           path: ${{ matrix.release }}/
       - name: open knowledge framework validation
-        uses: helpfulengineering/ok-validate@v0.0.3
+        uses: helpfulengineering/ok-validate@v0.0.4
         if: ${{ github.event_name != 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         with:
           path: ${{ matrix.release }}/
