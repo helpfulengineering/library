@@ -8,7 +8,7 @@ intended-use: "The “MakerMask: Origami (Beta)” is designed as a stand-alone 
   without any seams in the central mask area and creates a 3-D shape around the
   face that gives extra space around the mouth and nose."
 project-link: https://makermask.org/masks/origami-fitted-mask/
-image: https://makermask.org/wp-content/uploads/2020/08/MakerMask_Photo_Tutorial.pdf
+image: https://makermask.org/wp-content/uploads/2020/06/erin_surge_mmlabeled.png
 made: true
 made-independently: true
 license:
@@ -39,7 +39,9 @@ contact:
     - platform: https://www.instagram.com/themakermask/
       user-handle: https://www.instagram.com/themakermask/
 contributors:
-  - null
+  - name: Dr. Jocelyn Songer
+    affiliation: Helpful Engineering
+    email: info@helpfulengineering.org
 version: "Beta "
 development-stage: product
 documentation-home: https://makermask.org/masks/origami-fitted-mask/
@@ -78,4 +80,6 @@ health-safety-notice: These instructions do not guarantee protection against tra
   ensuring compliance with all applicable laws and regulations. Desperate times
   call for desperate measures. Stay safe.
 standards-used:
-  - null
+  - standard-title: ASTM
+    publisher: ASTM International
+    reference: F1862

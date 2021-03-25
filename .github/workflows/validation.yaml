@@ -1,18 +1,50 @@
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   validate:
     name: validate
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        release: ['alpha', 'beta', 'stable']
     steps:
       - uses: actions/checkout@v2
-      - name: yq valid yaml
-        uses: mikefarah/yq@3.4.0
-        with:
-          cmd: for file in ./ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
-      - name: lint yaml
+      # - name: yq valid yaml
+      #   uses: mikefarah/yq@3.4.0
+      #   with:
+      #     cmd: for file in ./${{ matrix.release }}/ok*/*.y*ml; do if ! yq v "$file"; then echo "'${file}' is invalid" && exit 1; fi; done
+      - name: check for yaml files
+        id: has-yaml-files
+        run: |
+          echo "::set-output name=num-yaml-files::$(find ${{ matrix.release }} -name "*.y*ml" -printf '.' | wc -m | xargs)"
+      - name: lint ${{ matrix.release }} yaml
+        if: ${{ steps.has-yaml-files.outputs.num-yaml-files != '0' }}
         uses: ibiqlik/action-yamllint@v1
         with:
-          file_or_dir: okh/*.y*ml
+          file_or_dir: ${{ matrix.release }}/ok*/*.y*ml
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
           # for status check annotations in GitHub
-          format: parsable 
+          format: parsable
+      - uses: jitterbit/get-changed-files@v1
+        name: determine file changes
+        if: ${{ github.event_name == 'pull_request' }}
+        id: changed-files
+        with:
+          format: space-delimited
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: open knowledge framework validation (pull request)
+        uses: helpfulengineering/ok-validate@v0.0.4
+        if: ${{ github.event_name == 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
+        with:
+          file-restrictions: ${{ steps.changed-files.outputs.all }}
+          path: ${{ matrix.release }}/
+      - name: open knowledge framework validation
+        uses: helpfulengineering/ok-validate@v0.0.4
+        if: ${{ github.event_name != 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
+        with:
+          path: ${{ matrix.release }}/
