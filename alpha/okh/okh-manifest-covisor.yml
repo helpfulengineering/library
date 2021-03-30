@@ -22,6 +22,10 @@ licensor:
 okh-manifest-version: 1.0.0
 date-created: 2020-12-01
 date-updated: 2020-12-02
+manifest-author:
+  name: Deepti Sawhney
+  affiliation: Helpful Engineering
+  email: deeptisawhney22@gmail.com
 manifest-language: en-US
 contact:
   name: " Sam Lanyon"
