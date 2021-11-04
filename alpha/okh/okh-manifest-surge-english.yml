@@ -1,0 +1,63 @@
+title: Surge Pleated Mask from MakerMask (English)
+description: "The MakerMask: Surge is a three-layer pleated mask designed using spunbond
+  nonwoven polypropylene (NWPP) for the mask body, latex-free ties to secure the
+  mask to the head, and a flexible nose bridge for improved fit. Criteria for
+  mask material selection for MakerMask designs, including breathability,
+  water-resistance, filtration, and compatible with cleaning/disinfection
+  procedures is described in “The Big Four: Criteria for Community Mask Material
+  Selection for COVID-19.”"
+intended-use: "This is an end-use mask to reduce transmission of infectious diseases, in
+  particular COVID-19. "
+keywords:
+  - mask
+  - COVID-19
+  - fabric mask
+  - infection control
+project-link: https://makermask.org/masks/surge/
+image: https://makermask.org/wp-content/uploads/2020/06/erin_surge_mmlabeled.png
+made: true
+made-independently: false
+license:
+  software: CC-BY-4.0
+licensor:
+  name: Dr. Jocelyn Songer
+  affiliation: MakerMaske.org
+  email: jocelyn.e.songer@gmail.com
+okh-manifest-version: 1.0.0
+date-created: 2021-09-30
+date-updated: 2021-09-30
+manifest-author:
+  name: Robert L. Read
+  affiliation: Public Invention, a research non-profit
+  email: read.robert@pubinv.org
+manifest-language: en-US
+contact:
+  name: Robert Lee Read
+  affiliation: Public Invention, a research non-profit
+  email: read.robert@gmail.com
+version: 0.0.1
+development-stage: product
+documentation-home: https://makermask.org/masks/surge/
+bom: Freshly washed spunbond NWPP bags ( 3 sheets, 8″ by 9″), Bias tape or other
+  latex-free ties (e.g., cotton ties or silicone ties), Coffee tin ties, pipe
+  cleaners or coated paper clips
+tool-list: Sewing machine, Scissors and pins, Measuring tape or ruler
+making-instructions:
+  - path: https://makermask.org/masks/surge/
+    title: "MakerMask: Surge Instructions"
+maintenance-instructions:
+  - path: https://makermask.org/masks/surge/
+    title: Wash/Disinfect mask before each use.
+health-safety-notice: These instructions do not guarantee protection against transmission of any
+  diseases. Commercially available masks meet regulatory guidelines, but
+  homemade masks may not. Mask designs have not been FDA approved or cleared.
+  Homemade masks are to be used at your own risk. Due to variability of
+  materials and construction, the mask’s safety or effectiveness is not proven
+  and cannot be assumed. Information and instructions are not guaranteed to be
+  complete and accurate. Manufacturers and distributors are responsible for
+  ensuring compliance with all applicable laws and regulations. Desperate times
+  call for desperate measures. Stay safe.
+standards-used:
+  - standard-title: "Label Me A Face Mask: FDA Labeling Requirements"
+    publisher: Maker Mask
+    reference: https://makermask.org/label-me-face-mask/

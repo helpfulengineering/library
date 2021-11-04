@@ -1,0 +1,81 @@
+title: "MakerMask: Surge (Oleada) Instrucciones (Español)"
+description: >
+  MakerMask: Surge es una máscara plisada de tres capas diseñada con
+  polipropileno no tejido hilado (NWPP) para el cuerpo de la máscara, lazos sin
+  látex para asegurar la máscara a la cabeza y un puente nasal flexible para un
+  mejor ajuste. Los criterios para la selección del material de la mascarilla
+  para los diseños de MakerMask, incluida la transpirabilidad, la resistencia al
+  agua, la filtración y la compatibilidad con los procedimientos de limpieza /
+  desinfección se describen en "Los cuatro grandes: Criterios para la selección
+  del material de la mascarilla comunitaria para COVID-19".
+intended-use: Máscara de tela para reducir la transmisión de COVID-19.
+keywords:
+  - " máscara"
+  - COVD-19
+  - " máscara de tela"
+  - " control de infección"
+project-link: https://makermask.org/es/masks/surge/
+image: https://makermask.org/wp-content/uploads/2020/06/erin_surge_mmlabeled.png
+made: true
+made-independently: false
+license:
+  hardware: CC-BY-4.0
+  documentation: CC-BY-4.0
+licensor:
+  name: Dr. Jocelyn Songer
+  affiliation: MakerMaske.org
+  email: jocelyn.e.songer@gmail.com
+okh-manifest-version: 1.0.0
+date-created: 2021-09-30
+date-updated: 2021-09-30
+manifest-author:
+  name: Robert L. Read
+  affiliation: Public Invention, a research non-profit
+  email: read.robert@pubinv.org
+manifest-is-translation:
+  title: Surge Pleated Mask from MakerMake (English)
+  manifest: https://github.com/helpfulengineering/library/tree/main/alpha/okh
+  web: https://github.com/helpfulengineering/library/tree/main/alpha/okh
+contact:
+  name: Robert Lee Read
+  affiliation: Public Invention, a research non-profit
+  email: read.robert@gmail.com
+version: 0.0.1
+development-stage: product
+documentation-home: https://makermask.org/masks/surge/
+documentation-is-translation:
+  title: Surge Pleated Mask from MakerMake (English)
+  manifest: https://github.com/helpfulengineering/library/tree/main/alpha/okh
+  web: https://github.com/helpfulengineering/library/tree/main/alpha/okh
+bom: " Bolsas de NWPP spunbond recién lavadas (3 hojas, 8 ″ por 9 ″), Cinta al bies
+  u otros lazos sin látex (p. Ej., Lazos de algodón o de silicona),   Lazos de
+  lata de café, limpiapipas o sujetapapeles recubiertos"
+tool-list: Máquina de Coser, Tijeras y alfileres Cinta métrica o regla
+making-instructions:
+  - path: https://makermask.org/es/masks/surge/
+    title: Surge – Pleated Mask haga clic en la bandera de idioma español en la parte
+      inferior de la página
+operating-instructions:
+  - path: https://makermask.org/masks/surge/
+    title: 'Si bien la esterilización en autoclave es ideal, los usuarios domésticos
+      pueden simplemente sumergir las máscaras en agua hirviendo durante 10
+      minutos. Los detalles sobre el cuidado y uso de MakerMask: los diseños de
+      mascarillas contra sobretensiones están disponibles en el ejemplo de
+      etiqueta de uso y cuidado del usuario (pdf) y en nuestra publicación sobre
+      los requisitos de etiquetado de la mascarilla facial de la FDA,
+      "Etiquetarme una mascarilla".'
+health-safety-notice: Estas instrucciones no garantizan la protección contra la transmisión de
+  enfermedades. Las máscaras disponibles comercialmente cumplen con las pautas
+  reglamentarias, pero es posible que las máscaras caseras no. Los diseños de
+  mascarillas no han sido aprobados ni autorizados por la FDA. Las mascarillas
+  caseras deben usarse bajo su propio riesgo. Debido a la variabilidad de los
+  materiales y la construcción, la seguridad o eficacia de la máscara no está
+  probada y no puede asumirse. No se garantiza que la información y las
+  instrucciones sean completas y precisas. Los fabricantes y distribuidores son
+  responsables de garantizar el cumplimiento de todas las leyes y normativas
+  aplicables. Tiempos desesperados requieren medidas desesperadas. Mantenerse a
+  salvo.
+standards-used:
+  - standard-title: "Label Me A Face Mask: FDA Labeling Requirements"
+    publisher: Maker Mask
+    reference: https://makermask.org/label-me-face-mask/
