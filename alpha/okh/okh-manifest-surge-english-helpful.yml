@@ -41,41 +41,29 @@ documentation-home: https://makermask.org/masks/surge/
 
 ## Helpful schema added properties
 
-# bom: Freshly washed spunbond NWPP bags ( 3 sheets, 8″ by 9″), 
-    # Bias tape or other latex-free ties (e.g., cotton ties or silicone ties), 
-    # Coffee tin ties, 
-    # pipe cleaners or coated paper clips
+bom: Freshly washed spunbond NWPP bags ( 3 sheets, 8″ by 9″), Bias tape or other
+  latex-free ties (e.g., cotton ties or silicone ties), Coffee tin ties, pipe
+  cleaners or coated paper clips
 
 bom-atoms:
   # TODO: size, quantity
-  - identifier: Q4902580
+  - identifier:
     description: Freshly washed spunbond Non-woven Polypropylene bags (3 sheets, 8″ by 9″)
+    link: 
+  - description: Bias tape or other latex-free ties (e.g., cotton ties or silicone ties)
+    identifier: Q4902580
     link: https://www.wikidata.org/wiki/Q4902580
-  # one-of is borrowed from JSON schema. Not sure if YAML schema supports this
-  - one-of:
-    - description: Bias tape
-      identifier: 
-      link: 
-    - description: cotton ties
-      identifier: 
-      link: 
-    - description: silicone ties
-      identifier: 
-      link: 
   - identifier: 
     description: Coffee tin ties
     link: 
-  # one-of is borrowed from JSON schema. Not sure if YAML schema supports this
-  - one-of:
-    - identifier: Q3355092 
-      description: pipe cleaners 
-      link: https://www.wikidata.org/wiki/Q3355092
-    - identifier: Q8353
-      description: coated paper clips
-      link: https://www.wikidata.org/wiki/Q8353
+  - identifier: Q3355092 
+    description: pipe cleaners 
+    link: https://www.wikidata.org/wiki/Q3355092
+  - identifier: Q8353
+    description: coated paper clips
+    link: https://www.wikidata.org/wiki/Q8353
 
-
-# tool-list: Sewing machine, Scissors and pins, Measuring tape or ruler
+tool-list: Sewing machine, Scissors and pins, Measuring tape or ruler
 tool-list-atoms:
   - identifier: Q49013
     description: Sewing machine 
