@@ -1,7 +1,25 @@
 title: Chair Supplies
 tool-list-atoms: []
 supplies-atom:
-  - identifier: QH102
+bom: legs, seat, back
+
+supply-atoms:
+  # TODO: size, quantity
+  - identifier: Q79928004
+    description: chair legs
+    link: https://www.wikidata.org/wiki/Q79928004
+  - description: seat
+    identifier: Q2207370
+    link: https://www.wikidata.org/wiki/Q2207370
+  - identifier: 
+    description: 
+    link: 
+  - identifier: Q95968272
     description: chair back
-  - identifier: QH100
-    description: chair leg
+    link: https://www.wikidata.org/wiki/Q95968272
+  - identifier: 
+    description: 
+    link: 
+
+tool-list: 
+tool-list-atoms: []
