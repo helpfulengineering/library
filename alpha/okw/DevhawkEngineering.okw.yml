@@ -1,0 +1,15 @@
+title: James Maker Space
+tool-list-atoms:
+  - identifier: Q49013
+    description: Sewing machine 
+    link: https://www.wikidata.org/wiki/Q49013
+  - identifier: Q40847
+    description: Scissors
+    link: https://www.wikidata.org/wiki/Q40847
+  - identifier: Q111591519
+    description: Pins
+    link: https://www.wikidata.org/wiki/Q111591519
+  - identifier: Q107196205
+    description: Measuring tape
+    link: https://www.wikidata.org/wiki/Q107196205
+supplies-atom: []
