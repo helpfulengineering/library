@@ -1,0 +1,96 @@
+title: Chair 
+description: for some one to sit on 
+  procedures is described in “The Big Four: 
+
+intended-output: Chair
+    identifier: Q15026
+    description: 	piece of furniture for sitting on
+    link: https://www.wikidata.org/wiki/Q15026
+
+intended-use: 
+
+keywords:
+ 
+project-link: 
+image:
+made: true
+made-independently: false
+license:
+  software: CC-BY-4.0
+licensor:
+  name: 
+  affiliation: 
+  email: 
+okh-manifest-version: 1.0.0
+date-created: 
+date-updated: 
+manifest-author:
+  name: 
+  affiliation: 
+  email: 
+manifest-language: en-US
+contact:
+  name: James Butler
+  affiliation: 
+  email: jbutler@helpfulengeneering.org
+version: 0.0.1
+development-stage: product
+documentation-home: 
+
+## Helpful schema added properties
+
+bom: legs, seat, back
+
+bom-atoms:
+  # TODO: size, quantity
+  - identifier: Q79928004
+    description: chair legs
+    link: https://www.wikidata.org/wiki/Q79928004
+  - description: seat
+    identifier: Q2207370
+    link: https://www.wikidata.org/wiki/Q2207370
+  - identifier: 
+    description: 
+    link: 
+  - identifier: Q95968272
+    description: chair back
+    link: https://www.wikidata.org/wiki/Q95968272
+  - identifier: 
+    description: 
+    link: 
+
+tool-list: hammer, saw, screw driver
+tool-list-atoms:
+  - identifier: Q25294
+    description: hammer
+    link: https://www.wikidata.org/wiki/Q25294
+  - identifier: Q125356
+    description: saw
+    link: https://www.wikidata.org/wiki/Q125356
+  - identifier: Q161071
+    description: screw driver
+    link: https://www.wikidata.org/wiki/Q161071
+
+
+product-atom: 
+  - identifier: QH00002
+    descroption: chair
+
+bom-output-atoms:
+  - identifier: 
+    description: Scrap wood
+    link: 
+## end of added properties
+
+
+making-instructions:
+  - path:
+    title: 
+maintenance-instructions:
+  - path: 
+    title: 
+health-safety-notice: 
+standards-used:
+  - standard-title: "Label Me A Face Mask: FDA Labeling Requirements"
+    publisher:
+    reference: 
