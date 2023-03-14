@@ -11,9 +11,6 @@ supply-atoms:
   - description: seat
     identifier: Q2207370
     link: https://www.wikidata.org/wiki/Q2207370
-  - identifier: 
-    description: 
-    link: 
   - identifier: Q95968272
     description: chair back
     link: https://www.wikidata.org/wiki/Q95968272
