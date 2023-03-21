@@ -2,7 +2,7 @@ title: Chair
 description: for some one to sit on 
   procedures is described in “The Big Four: 
 
-intended-output: Chair
+intended-output: Seat
     identifier: Q15026
     description: 	piece of furniture for sitting on
     link: https://www.wikidata.org/wiki/Q15026
@@ -10,7 +10,6 @@ intended-output: Chair
 intended-use: 
 
 keywords:
- 
 project-link: 
 image:
 made: true
@@ -39,21 +38,24 @@ documentation-home:
 
 ## Helpful schema added properties
 
-bom: legs, seat, back
+bom: frame, stuffing, upholstery, nail
 
 bom-atoms:
   # TODO: size, quantity
-  - identifier: Q79928004
-    description: chair legs
-    link: https://www.wikidata.org/wiki/Q79928004
-  - description: seat
-    identifier: Q2207370
-    link: https://www.wikidata.org/wiki/Q2207370
-  - identifier: Q95968272
-    description: chair back
-    link: https://www.wikidata.org/wiki/Q95968272
+  - identifier: Q1123578
+    description: upholstery
+    link: https://www.wikidata.org/wiki/Q1123578
+  - identifier: nail
+    description: Q37077
+    link: https://www.wikidata.org/wiki/Q37077
+  - identifier: Q745361
+    description: stuffing
+    link: https://www.wikidata.org/wiki/Q745361
+  ##- identifier: Q1123578
+  ##  description: seat frame
+  ##  link: https://www.wikidata.org/wiki/Q1123578 (there is an issue with sub componets and how we lable them)
 
-tool-list: hammer, saw, screw driver
+tool-list: 
 tool-list-atoms:
   - identifier: Q25294
     description: hammer
