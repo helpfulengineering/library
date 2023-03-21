@@ -79,7 +79,7 @@ tool-list-atoms:
     link: https://www.wikidata.org/wiki/Q107196205
 
 product-atom: 
-  - identifier: QH00001
+    identifier: QH00001
     descroption: Fabric Mask
 
 bom-output-atoms:

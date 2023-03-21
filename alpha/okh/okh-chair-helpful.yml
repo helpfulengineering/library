@@ -1,11 +1,11 @@
 title: Chair 
-description: for some one to sit on 
-  procedures is described in “The Big Four: 
+# description: for some one to sit on 
+#   procedures is described in “The Big Four: 
 
-intended-output: Chair
-    identifier: Q15026
-    description: 	piece of furniture for sitting on
-    link: https://www.wikidata.org/wiki/Q15026
+# intended-output: Chair
+#     identifier: Q15026
+#     description: 	piece of furniture for sitting on
+#     link: https://www.wikidata.org/wiki/Q15026
 
 intended-use: 
 
@@ -67,7 +67,7 @@ tool-list-atoms:
 
 
 product-atom: 
-  - identifier: QH00002
+    identifier: QH00002
     descroption: chair
 
 bom-output-atoms:
