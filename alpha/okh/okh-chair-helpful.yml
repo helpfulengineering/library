@@ -46,8 +46,8 @@ bom-atoms:
   - identifier: Q79928004
     description: chair legs
     link: https://www.wikidata.org/wiki/Q79928004
-  - description: seat
-    identifier: Q2207370
+  - identifier: Q2207370
+    description: seat
     link: https://www.wikidata.org/wiki/Q2207370
   - identifier: Q95968272
     description: chair back
