@@ -68,7 +68,7 @@ tool-list-atoms:
 
 product-atom: 
     identifier: QH00002
-    descroption: chair
+    description: chair
 
 bom-output-atoms:
   - identifier: 
