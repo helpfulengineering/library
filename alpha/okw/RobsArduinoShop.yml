@@ -1,0 +1,47 @@
+contact: include('contact-kit', required=False) # currently listed as required,
+
+contributors: list(include('nonessential-contact'), required=False)                             # recommended
+
+version: str(required=False)                 # text
+
+development-stage: str(required=False)       # text
+
+
+# # License
+
+# license: any(include('license-item'), list(include('license-item')))  # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
+license: license()  # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
+licensor: include('nonessential-contact', required=False)
+
+
+# # Documentation
+
+documentation-home: include('url-type', required=False)               # At least one of the project-link or documentation-home fields is required | absolute path
+
+archive-download: include('url-type', required=False)                 # Absolute or relative path
+
+# # Core Matchable Work
+
+atom-type:
+  identifier: str(required=True)
+  description: str(required=False)
+  link: url-type(required=False)
+
+url-type: regex('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', name='valid url')
+
+
+# 'inventory-atoms' are the things which this OKW either expects to have in inventory
+inventory-atoms: list(atom-type, required=False)
+
+# 'product-atoms' are the things that the OKW know how to make without an OKH
+# can make a-priori. This assumes it requires no additional supplies or
+# inputs. It may take more time to supply an product-atom than an inventory-atom.
+product-atoms: list(atom-type, required=False)
+
+# tool-list atoms are used to make things specified with an OKH
+tool-list-atoms: list(atom-type, required=False)
+
+
+# These defines "processes" which can be carried out at the facility.
+# Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
+processes: list(atom-type, required=False)
