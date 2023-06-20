@@ -54,6 +54,13 @@ tool-list-atoms:
  - identifier: Q1391831
    description: Thread
    link: https://www.wikidata.org/wiki/Q1391831
+ - identifier: Q107196205
+   description: measuring tape
+   link: https://www.wikidata.org/wiki/Q107196205
+ - identifier: Q111591519
+   description: Pins
+   link: https://www.wikidata.org/wiki/Q111591519
+  
    
 
 
