@@ -1,0 +1,72 @@
+contact: Robert L. Read, PhD, read.robert@gmail.com
+
+contributors: Robert L. Read
+
+version: 0.1
+
+development-stage: early
+
+# # License
+
+# license: any(include('license-item'), list(include('license-item')))  # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
+license: Creative Commons CC0 (Public Domain Dedication)  
+licensor: Robert L. Read
+
+
+# # Documentation
+
+documentation-home: https://www.pubinv.org/               
+
+archive-download: 
+
+# # Core Matchable Work
+
+# 'inventory-atoms' are the things which this OKW either expects to have in inventory
+inventory-atoms: 
+ - identifier: Q8231603
+   description: General purpose cotton fabric of garment weight for sewing
+   link: https://www.wikidata.org/wiki/Q8231603
+
+ - identifier: Q3715160
+   description: General purpose wool suiting appropriate for seweing garments for men
+   link: https://www.wikidata.org/wiki/Q3715160
+
+
+# 'product-atoms' are the things that the OKW know how to make without an OKH
+# can make a-priori. This assumes it requires no additional supplies or
+# inputs. It may take more time to supply an product-atom than an inventory-atom.
+product-atoms: 
+- identifier: Q2160801
+  description: Simple skirts with drawstrings
+  link: https://www.wikidata.org/wiki/Q2160801
+
+# tool-list atoms are used to make things specified with an OKH
+tool-list-atoms: 
+ - identifier: Q49013
+   description: Baby Loc Sewing Machine
+   link: https://www.wikidata.org/wiki/Q49013
+ - identifier: Q40847
+   description: Scissors
+   link: https://www.wikidata.org/wiki/Q40847
+ - identifier: Q111337721
+   description: Shears
+   link: https://www.wikidata.org/wiki/Q111337721
+ - identifier: Q1391831
+   description: Thread
+   link: https://www.wikidata.org/wiki/Q1391831
+ - identifier: Q107196205
+   description: measuring tape
+   link: https://www.wikidata.org/wiki/Q107196205
+ - identifier: Q111591519
+   description: Pins
+   link: https://www.wikidata.org/wiki/Q111591519
+  
+   
+
+
+# These defines "processes" which can be carried out at the facility.
+# Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
+processes: 
+  - identifier: Q211387
+    description: Sewing of simple (non-fashion) garments 
+    link: https://www.wikidata.org/wiki/Q652122
