@@ -6,13 +6,6 @@ version: 0.1
 
 development-stage: early
 
-# # License
-
-# license: any(include('license-item'), list(include('license-item')))  # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
-license: AGPL 3.0 https://www.gnu.org/licenses/agpl-3.0.en.html  
-licensor: Robert L. Read
-
-
 # # Documentation
 
 documentation-home: https://www.pubinv.org/               
