@@ -1,1 +1,109 @@
+title: Vanishing Oatmeal Raisin Cookies
+description: "This recipe for Quaker Oats oatmeal raisin cookies
+is a yummy way to eat your oats. Whether you make them into cookies 
+or bar cookies, vanishing oatmeal raisin cookies will please a 
+crowd or satisfy your sweet tooth. -- From the Quaker Oats Website
+https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies"
+intended-use: "Joy and happiness in moderation"
+keywords:
+  - cookie
+project-link: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
+image: 
+made: true
+made-independently: true
+license:
+  software: No license information on Quaker Oats website, but "Quaker(R)" is a registered trademark
+licensor:
+  name: Quaker Oats
+  affiliation: https://www.quakeroats.com/
+  email: 
+okh-manifest-version: 1.0.0
+date-created: 2023-08-01
+date-updated: 2023-08-01
+manifest-author:
+  name: Robert L. Read
+  affiliation: Public Invention, a research non-profit
+  email: read.robert@pubinv.org
+manifest-language: en-US
+contact:
+  name: Robert Lee Read
+  affiliation: Public Invention, a research non-profit
+  email: read.robert@gmail.com
+version: 0.0.1
+development-stage: product
+documentation-home: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
+## Helpful schema added properties
+
+bom: "1/2 Cup(s) (1 stick) plus 6 tablespoons butter, softened
+3/4 Cup(s) firmly packed brown sugar
+1/2 Cup(s) granulated sugar
+2 Eggs
+1 Teaspoon(s) vanilla
+1-1/2 Cup(s) all-purpose flour
+1 Teaspoon(s) Baking Soda
+1 Teaspoon(s) ground cinnamon
+1/2 Teaspoon(s) salt (optional)
+3 Cup(s) Quaker® Oats (quick or old fashioned, uncooked)
+1 Cup(s) raisins"
+
+bom-atoms:
+  # TODO: size, quantity
+- identifier: Q34172
+   description: butter
+   link: https://www.wikidata.org/wiki/Q34172
+ - identifier: Q4409456
+   description: white sugar
+   link: https://www.wikidata.org/wiki/Q4409456
+  - identifier: Q11190742
+   description: brown sugar
+   link: https://www.wikidata.org/wiki/Q11190742
+  - identifier: Q10749869
+   description: vanilla extract
+   link: https://www.wikidata.org/wiki/Q10749869
+  - identifier: Q95388739
+   description: all-purpose flour
+   link: https://www.wikidata.org/wiki/Q95388739
+  - identifier: Q28165
+   description: cinnamon
+   link: https://www.wikidata.org/wiki/Q28165
+  - identifier: Q1208221
+   description: rolled oats
+   link: https://www.wikidata.org/wiki/Q1208221
+  - identifier: Q13186
+   description: raisin
+   link: https://www.wikidata.org/wiki/Q13186
+ - identifier: Q117207909
+   description: food storage bag
+   link: https://www.wikidata.org/wiki/Q117207909
+  - identifier: Q117208399
+   description: Shipping supply
+   link: https://www.wikidata.org/wiki/Q117208399
+
+tool-list: Oven, Sheet Pan, Spatula
+tool-list-atoms:
+ - identifier: Q36539
+   description: Oven
+   link: https://www.wikidata.org/wiki/Q36539
+ - identifier: Q502335
+   description: Sheet Pan
+   link: https://www.wikidata.org/wiki/Q502335
+  - identifier: Q15148
+   description: Spatula
+   link: https://www.wikidata.org/wiki/Q15148
+
+product-atom: 
+    identifier: Q16682389
+    descroption: Oatmeal raisin cookie
+
+bom-output-atoms:
+
+## end of added properties
+
+
+making-instructions:
+  - path: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
+    title: "Vanishing Oatmeal Raisin Cookies"
+maintenance-instructions:
+health-safety-notice: 
+standards-used:
 
