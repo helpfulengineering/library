@@ -1,0 +1,69 @@
+contact: Robert L. Read, PhD, read.robert@gmail.com
+
+contributors: Robert L. Read
+
+version: 0.1
+
+development-stage: early
+
+# # License
+
+# license: any(include('license-item'), list(include('license-item')))  # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
+license: AGPL 3.0 https://www.gnu.org/licenses/agpl-3.0.en.html  
+licensor: Robert L. Read
+
+
+# # Documentation
+
+documentation-home: https://www.pubinv.org/               
+
+archive-download: 
+
+# # Core Matchable Work
+
+# 'inventory-atoms' are the things which this OKW either expects to have in inventory
+inventory-atoms: 
+ - identifier: Q25814150
+   description: The famous and ubiquitous Arduino UNO R3
+   link: https://www.wikidata.org/wiki/Q25814150
+ - identifier: Q26998715
+   description: Arduino Due
+   link: https://www.wikidata.org/wiki/Q26998715
+ - identifier: Q11421
+   description: magnets
+   link: https://www.wikidata.org/wiki/Q11421
+ - identifier: Q6311222
+   description: jumper wire
+   link: https://www.wikidata.org/wiki/Q6311222
+ - identifier: Q25504
+   description: LEDs general through-hole soldering
+   link: https://www.wikidata.org/wiki/Q25504
+ - identifier: Q204157
+   description: Power supply (general AC/DC and DC digital and analog power supplies)
+   link: https://www.wikidata.org/wiki/Q204157
+
+
+# 'product-atoms' are the things that the OKW know how to make without an OKH
+# can make a-priori. This assumes it requires no additional supplies or
+# inputs. It may take more time to supply an product-atom than an inventory-atom.
+product-atoms: 
+- identifier: Q207977
+  description: General ability to make prototypes of electronic and embedded systms
+  link: https://www.wikidata.org/wiki/Q207977
+- identifier: QH00002
+  description: Unscrew Propeller
+  link: https://github.com/PubInv/unscrew-propeller
+
+# tool-list atoms are used to make things specified with an OKH
+tool-list-atoms: 
+ - identifier: Q1879849
+   description: soldering station for electronic components (HAKO)
+   link: https://www.wikidata.org/wiki/Q1879849
+
+
+# These defines "processes" which can be carried out at the facility.
+# Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
+processes: 
+  - identifier: Q211387
+    description: soldering of electronic components, through-hole soldering in general, some smd soldering and perfboard
+    link: https://www.wikidata.org/wiki/Q211387
