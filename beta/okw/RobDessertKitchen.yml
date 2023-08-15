@@ -21,7 +21,7 @@ archive-download:
 
 # # Core Matchable Work
 
-# 'inventory-atoms' are the things which this OKW either expects to have in inventory
+# 'inventory-atoms' are the things which this OKW expects to have in inventory
 inventory-atoms: 
 # - identifier: Q25814150
 #   description: The famous and ubiquitous Arduino UNO R3
@@ -51,22 +51,38 @@ inventory-atoms:
   - identifier: Q13186
    description: raisin
    link: https://www.wikidata.org/wiki/Q13186
-  - identifier: Q93189
-   description: egg
-   link: https://www.wikidata.org/wiki/Q93189
  - identifier: Q117207909
    description: food storage bag
    link: https://www.wikidata.org/wiki/Q117207909
+  - identifier: Q117208399
+   description: Shipping supply
+   link: https://www.wikidata.org/wiki/Q117208399
 
 
 # 'product-atoms' are the things that the OKW know how to make without an OKH
 # can make a-priori. This assumes it requires no additional supplies or
 # inputs. It may take more time to supply an product-atom than an inventory-atom.
 product-atoms: 
+ - identifier: Q16682389
+   description: Oatmeal raisin cookie
+   link: https://www.wikidata.org/wiki/Q16682389
 
 # tool-list atoms are used to make things specified with an OKH
 tool-list-atoms: 
+ - identifier: Q36539
+   description: Oven
+   link: https://www.wikidata.org/wiki/Q36539
+ - identifier: Q502335
+   description: Sheet Pan
+   link: https://www.wikidata.org/wiki/Q502335
+  - identifier: Q15148
+   description: Spatula
+   link: https://www.wikidata.org/wiki/Q15148
+
 
 # These defines "processes" which can be carried out at the facility.
 # Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
 processes: 
+#  - identifier: Q211387
+#   description: soldering of electronic components, through-hole soldering in general, some smd soldering and perfboard
+#   link: https://www.wikidata.org/wiki/Q211387
