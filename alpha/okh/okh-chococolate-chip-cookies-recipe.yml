@@ -1,0 +1,112 @@
+title: Chocolate Chip Cookies
+description: This recipe for chocolate chip cookies was adapted by James Butler from past expericence a reading of the respie literature on the internet primary ref Babagebasics with babish 
+intended-use: Joy and happiness in moderation
+keywords:
+  - cookie - chocolate
+project-link: 
+image: 
+made: true
+made-independently: true
+license:
+  software: No license information on Quaker Oats website, but "Quaker(R)" is a registered trademark
+licensor:
+  name: James Butler 
+  affiliation: 
+  email: Jbutler@helpfulengineering.org
+okh-manifest-version: 1.0.0
+date-created: 2023-08-26
+date-updated: 2023-08-16
+manifest-author:
+  name: James Butler
+  affiliation: Helpful Engineering, a non-profit
+  email: Jbutler@helpfulengineering.org
+manifest-language: en-US
+contact:
+  name: James Butler 
+  affiliation: Helpful Engineering, non-profit
+  email: Jbutler@helpfulengineering.org
+version: 0.0.1
+development-stage: development
+documentation-home:
+## Helpful schema added properties
+
+bom: 
+2 sticks (16 Tbsp) Unsalted butter
+½ cup white sugar
+1½ cups brown sugar
+2 eggs
+11 ½ ounces all purpose flour
+1 Tbsp kosher salt
+½ tsp baking soda
+¾ tsp cinnamon
+Chocolate chips
+Nuts (walnuts or your favorite)
+Flaky sea salt
+
+bom-atoms:
+  - identifier: Q34172
+    description: Butter
+    link: https://www.wikidata.org/wiki/Q34172
+  - identifier: Q4409456
+    description: white sugar
+    link: https://www.wikidata.org/wiki/Q4409456
+  - identifier: Q11190742
+    description: brown sugar
+    link: https://www.wikidata.org/wiki/Q11190742
+  - identifier: Q95388739
+    description: all-purpose flour
+    link: https://www.wikidata.org/wiki/Q95388739
+  - identifier: Q4116639
+    description: kosher salt
+    link: https://www.wikidata.org/wiki/Q4116639
+  - identifier: Q179731
+    description: baking soda
+    link: https://www.wikidata.org/wiki/Q179731
+  - identifier: Q117207909
+    description: food storage bag
+    link: https://www.wikidata.org/wiki/Q117207909
+  - identifier: Q117208399
+    description: Shipping supply
+    link: https://www.wikidata.org/wiki/Q117208399
+  - identifier: Q28165
+    description: cinnamon
+    link: https://www.wikidata.org/wiki/Q28165
+  - identifier: Q13229680
+    description: chocolate chips
+    link: https://www.wikidata.org/wiki/Q1329680
+  - identifier: Q208021
+    description: walnuts
+    link: https://www.wikidata.org/wiki/Q208021
+
+tool-list: Oven, Sheet Pan, Spatula
+tool-list-atoms:
+  - identifier: Q36539
+    description: Oven
+    link: https://www.wikidata.org/wiki/Q36539
+  - identifier: Q502335
+    description: Sheet Pan
+    link: https://www.wikidata.org/wiki/Q502335
+  - identifier: Q15148
+    description: Spatula
+    link: https://www.wikidata.org/wiki/Q15148
+
+product-atom:
+  identifier: QQ14169302
+  descroption: Chocolet Chip Cookies 
+  Link: https://www.wikidata.org/wiki/Q14169302
+
+bom-output-atoms:
+  identifier: Q5167099
+  descroption: cookie dough 
+  Link: https://www.wikidata.org/wiki/Q5167099
+
+## end of added properties
+
+
+making-instructions:
+  - path: https://basicswithbabish.co/basicsepisodes/2017/10/23/baressentials-7xwwz
+    title: "CHOCOLATE CHIP COOKIES"
+maintenance-instructions:
+health-safety-notice: 
+standards-used:
+

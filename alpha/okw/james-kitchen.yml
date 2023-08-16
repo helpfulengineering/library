@@ -1,7 +1,7 @@
-title: Generic Grocery
-contact: Robert L. Read, PhD, read.robert@gmail.com
+title: James Kitchen
+contact: James Butler Jbutler@helpfulengineering.org
 
-contributors: Robert L. Read
+contributors: James Butler
 
 version: 0.1
 
@@ -11,7 +11,7 @@ development-stage: early
 
 # license: any(include('license-item'), list(include('license-item')))  # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
 license: AGPL 3.0 https://www.gnu.org/licenses/agpl-3.0.en.html  
-licensor: Robert L. Read
+licensor: James Butler
 
 
 # # Documentation
@@ -22,8 +22,8 @@ archive-download:
 
 # # Core Matchable Work
 
-# 'supply-atoms' are the things which this OKW can provide
-supply-atoms:
+# 'inventory-atoms' are the things which this OKW expects to have in inventory
+inventory-atoms:
   - identifier: Q34172
     description: butter
     link: https://www.wikidata.org/wiki/Q34172
@@ -48,34 +48,37 @@ supply-atoms:
   - identifier: Q13186
     description: raisin
     link: https://www.wikidata.org/wiki/Q13186
-  - identifier: Q93189
-    description: egg
-    link: https://www.wikidata.org/wiki/Q93189
   - identifier: Q117207909
     description: food storage bag
     link: https://www.wikidata.org/wiki/Q117207909
-  - identifier: Q208021
-    description: walnuts
-    link: https://www.wikidata.org/wiki/Q208021
-  - identifier: Q13229680
-    description: chocolate chips
-    link: https://www.wikidata.org/wiki/Q1329680
-  - identifier: Q4116639
-    description: kosher salt
-    link: https://www.wikidata.org/wiki/Q4116639
-  - identifier: Q179731
-    description: baking soda
-    link: https://www.wikidata.org/wiki/Q179731
-
+  - identifier: Q117208399
+    description: Shipping supply
+    link: https://www.wikidata.org/wiki/Q117208399
 
 # 'product-atoms' are the things that the OKW know how to make without an OKH
 # can make a-priori. This assumes it requires no additional supplies or
-# inputs. It may take more time to supply an product-atom than an supply-atom.
-product-atoms: 
+# inputs. It may take more time to supply an product-atom than an inventory-atom.
+product-atoms:
+  - identifier: Q16682389
+    description: Oatmeal raisin cookie
+    link: https://www.wikidata.org/wiki/Q16682389
 
 # tool-list atoms are used to make things specified with an OKH
-tool-list-atoms: 
+tool-list-atoms:
+  - identifier: Q36539
+    description: Oven
+    link: https://www.wikidata.org/wiki/Q36539
+  - identifier: Q502335
+    description: Sheet Pan
+    link: https://www.wikidata.org/wiki/Q502335
+  - identifier: Q15148
+    description: Spatula
+    link: https://www.wikidata.org/wiki/Q15148
+
 
 # These defines "processes" which can be carried out at the facility.
 # Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
 processes: 
+#  - identifier: Q211387
+#   description: soldering of electronic components, through-hole soldering in general, some smd soldering and perfboard
+#   link: https://www.wikidata.org/wiki/Q211387
