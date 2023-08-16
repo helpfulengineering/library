@@ -31,17 +31,17 @@ documentation-home:
 ## Helpful schema added properties
 
 bom: 
-2 sticks (16 Tbsp) Unsalted butter
-½ cup white sugar
-1½ cups brown sugar
-2 eggs
-11 ½ ounces all purpose flour
-1 Tbsp kosher salt
-½ tsp baking soda
-¾ tsp cinnamon
-Chocolate chips
-Nuts (walnuts or your favorite)
-Flaky sea salt
+  2 sticks (16 Tbsp) Unsalted butter
+  ½ cup white sugar
+  1½ cups brown sugar
+  2 eggs
+  11 ½ ounces all purpose flour
+  1 Tbsp kosher salt
+  ½ tsp baking soda
+  ¾ tsp cinnamon
+  Chocolate chips
+  Nuts (walnuts or your favorite)
+  Flaky sea salt
 
 bom-atoms:
   - identifier: Q34172
