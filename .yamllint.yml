@@ -1,2 +1,5 @@
 ---
 extends: relaxed
+
+rules:
+  trailing-spaces: disable
