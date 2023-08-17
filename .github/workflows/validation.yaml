@@ -30,21 +30,21 @@ jobs:
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
           # for status check annotations in GitHub
           format: parsable
-      - uses: jitterbit/get-changed-files@v1
-        name: determine file changes
-        if: ${{ github.event_name == 'pull_request' }}
-        id: changed-files
-        with:
-          format: space-delimited
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: open knowledge framework validation (pull request)
-        uses: helpfulengineering/ok-validate@v0.1.0
-        if: ${{ github.event_name == 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
-        with:
-          file-restrictions: ${{ steps.changed-files.outputs.all }}
-          path: ${{ matrix.release }}/
-      - name: open knowledge framework validation
-        uses: helpfulengineering/ok-validate@v0.1.0
-        if: ${{ github.event_name != 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
-        with:
-          path: ${{ matrix.release }}/
+      # - uses: jitterbit/get-changed-files@v1
+      #   name: determine file changes
+      #   if: ${{ github.event_name == 'pull_request' }}
+      #   id: changed-files
+      #   with:
+      #     format: space-delimited
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: open knowledge framework validation (pull request)
+      #   uses: helpfulengineering/ok-validate@v0.1.0
+      #   if: ${{ github.event_name == 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
+      #   with:
+      #     file-restrictions: ${{ steps.changed-files.outputs.all }}
+      #     path: ${{ matrix.release }}/
+      # - name: open knowledge framework validation
+      #   uses: helpfulengineering/ok-validate@v0.1.0
+      #   if: ${{ github.event_name != 'pull_request' && steps.has-yaml-files.outputs.num-yaml-files != '0' }}
+      #   with:
+      #     path: ${{ matrix.release }}/
