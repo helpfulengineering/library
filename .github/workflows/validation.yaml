@@ -24,7 +24,7 @@ jobs:
           echo "::set-output name=num-yaml-files::$(find ${{ matrix.release }} -name "*.y*ml" -printf '.' | wc -m | xargs)"
       - name: lint ${{ matrix.release }} yaml
         if: ${{ steps.has-yaml-files.outputs.num-yaml-files != '0' }}
-        uses: ibiqlik/action-yamllint@v1
+        uses: ibiqlik/action-yamllint@v3.1.1
         with:
           file_or_dir: ${{ matrix.release }}/ok*/*.y*ml
           # can match with the following: ^(.*):(\d+):(\d+):\s\[(.*)\]\s(.*)$
