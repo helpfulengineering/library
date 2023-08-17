@@ -1,11 +1,13 @@
 title: Chair 
-description: for some one to sit on 
+description: 
+  title: for some one to sit on 
   procedures is described in “The Big Four: 
 
-intended-output: Seat
-    identifier: Q15026
-    description: 	piece of furniture for sitting on
-    link: https://www.wikidata.org/wiki/Q15026
+intended-output:
+  name: Seat
+  identifier: Q15026
+  description: 	piece of furniture for sitting on
+  link: https://www.wikidata.org/wiki/Q15026
 
 intended-use: 
 
