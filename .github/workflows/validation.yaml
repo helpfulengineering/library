@@ -13,7 +13,7 @@ jobs:
       matrix:
         release: ['alpha', 'beta', 'stable']
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # - name: yq valid yaml
       #   uses: mikefarah/yq@3.4.0
       #   with:
