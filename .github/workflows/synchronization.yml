@@ -17,4 +17,6 @@ jobs:
           aws-region: us-east-1
           role-to-assume: arn:aws:iam::927162227090:role/library-s3
           role-duration-seconds: 43200 # 12 hours (maximum)
-      - run: rclone copy . :s3,env_auth=true:library-s3
+      - run: >
+          go run github.com/rclone/rclone@v1 copy .
+          :s3,env_auth=true:library-s3
