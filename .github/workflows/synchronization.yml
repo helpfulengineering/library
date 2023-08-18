@@ -1,0 +1,22 @@
+on:
+  push:
+    branches: [main]
+
+jobs:
+  synchronize:
+    concurrency: s3
+    environment: aws-s3
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::927162227090:role/library-s3
+          role-duration-seconds: 43200 # 12 hours (maximum)
+      - run: >
+          go run github.com/rclone/rclone@v1 sync --exclude '.**'
+          . :s3,provider=AWS,env_auth=true:library-s3
