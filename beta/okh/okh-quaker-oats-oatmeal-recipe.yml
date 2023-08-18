@@ -57,6 +57,9 @@ bom-atoms:
   - identifier: Q11190742
     description: brown sugar
     link: https://www.wikidata.org/wiki/Q11190742
+  - identifier: Q93189
+    description: egg
+    link: https://www.wikidata.org/wiki/Q93189
   - identifier: Q10749869
     description: vanilla extract
     link: https://www.wikidata.org/wiki/Q10749869
@@ -93,7 +96,7 @@ tool-list-atoms:
 
 product-atom:
   identifier: Q16682389
-  descroption: Oatmeal raisin cookie
+  description: Oatmeal raisin cookie
 
 bom-output-atoms:
 
