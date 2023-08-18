@@ -1,17 +1,17 @@
 title: Chocolate Chip Cookies
-description: This recipe for chocolate chip cookies was adapted by James Butler from past expericence a reading of the respie literature on the internet primary ref Babagebasics with babish 
+description: This recipe for chocolate chip cookies was adapted by James Butler from past expericence a reading of the respie literature on the internet primary ref Babagebasics with babish
 intended-use: Joy and happiness in moderation
 keywords:
   - cookie - chocolate
-project-link: 
-image: 
+project-link:
+image:
 made: true
 made-independently: true
 license:
   software: No license information on Quaker Oats website, but "Quaker(R)" is a registered trademark
 licensor:
-  name: James Butler 
-  affiliation: 
+  name: James Butler
+  affiliation:
   email: Jbutler@helpfulengineering.org
 okh-manifest-version: 1.0.0
 date-created: 2023-08-26
@@ -22,7 +22,7 @@ manifest-author:
   email: Jbutler@helpfulengineering.org
 manifest-language: en-US
 contact:
-  name: James Butler 
+  name: James Butler
   affiliation: Helpful Engineering, non-profit
   email: Jbutler@helpfulengineering.org
 version: 0.0.1
@@ -30,7 +30,7 @@ development-stage: development
 documentation-home:
 ## Helpful schema added properties
 
-bom: 
+bom:
   2 sticks (16 Tbsp) Unsalted butter
   ½ cup white sugar
   1½ cups brown sugar
@@ -92,12 +92,12 @@ tool-list-atoms:
 
 product-atom:
   identifier: QQ14169302
-  descroption: Chocolet Chip Cookies 
+  descroption: Chocolet Chip Cookies
   Link: https://www.wikidata.org/wiki/Q14169302
 
 bom-output-atoms:
   identifier: Q5167099
-  descroption: cookie dough 
+  descroption: cookie dough
   Link: https://www.wikidata.org/wiki/Q5167099
 
 ## end of added properties
@@ -107,6 +107,6 @@ making-instructions:
   - path: https://basicswithbabish.co/basicsepisodes/2017/10/23/baressentials-7xwwz
     title: "CHOCOLATE CHIP COOKIES"
 maintenance-instructions:
-health-safety-notice: 
+health-safety-notice:
 standards-used:
 

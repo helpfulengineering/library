@@ -1,7 +1,7 @@
-title: Chair 
-description: 
-  title: for some one to sit on 
-  procedures is described in “The Big Four: 
+title: Chair
+description:
+  title: for some one to sit on
+  procedures is described in “The Big Four:
 
 intended-output:
   name: Seat
@@ -9,34 +9,34 @@ intended-output:
   description: piece of furniture for sitting on
   link: https://www.wikidata.org/wiki/Q15026
 
-intended-use: 
+intended-use:
 
 keywords:
-project-link: 
+project-link:
 image:
 made: true
 made-independently: false
 license:
   software: CC-BY-4.0
 licensor:
-  name: 
-  affiliation: 
-  email: 
+  name:
+  affiliation:
+  email:
 okh-manifest-version: 1.0.0
-date-created: 
-date-updated: 
+date-created:
+date-updated:
 manifest-author:
-  name: 
-  affiliation: 
-  email: 
+  name:
+  affiliation:
+  email:
 manifest-language: en-US
 contact:
   name: James Butler
-  affiliation: 
+  affiliation:
   email: jbutler@helpfulengeneering.org
 version: 0.0.1
 development-stage: product
-documentation-home: 
+documentation-home:
 
 ## Helpful schema added properties
 
@@ -57,7 +57,7 @@ bom-atoms:
   ##  description: seat frame
   ##  link: https://www.wikidata.org/wiki/Q1123578 (there is an issue with sub componets and how we lable them)
 
-tool-list: 
+tool-list:
 tool-list-atoms:
   - identifier: Q25294
     description: hammer
@@ -70,25 +70,25 @@ tool-list-atoms:
     link: https://www.wikidata.org/wiki/Q161071
 
 
-product-atom: 
+product-atom:
   - identifier: QH00002
     descroption: chair
 
 bom-output-atoms:
-  - identifier: 
+  - identifier:
     description: Scrap wood
-    link: 
+    link:
 ## end of added properties
 
 
 making-instructions:
   - path:
-    title: 
+    title:
 maintenance-instructions:
-  - path: 
-    title: 
-health-safety-notice: 
+  - path:
+    title:
+health-safety-notice:
 standards-used:
   - standard-title: "Label Me A Face Mask: FDA Labeling Requirements"
     publisher:
-    reference: 
+    reference:
