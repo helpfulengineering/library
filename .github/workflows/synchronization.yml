@@ -15,8 +15,8 @@ jobs:
       - uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-region: us-east-1
-          role-to-assume: arn:aws:iam::927162227090:role/library-s3
+          role-to-assume: arn:aws:iam::927162227090:role/github-helpfulengineering-library
           role-duration-seconds: 43200 # 12 hours (maximum)
       - run: >
           go run github.com/rclone/rclone@v1 sync --exclude '.**'
-          . :s3,provider=AWS,env_auth=true:library-s3
+          . :s3,provider=AWS,env_auth=true:github-helpfulengineering-library
