@@ -8,7 +8,7 @@ intended-use: Joy and happiness in moderation
 keywords:
   - cookie
 project-link: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
-image: 
+image:
 made: true
 made-independently: true
 license:
@@ -16,7 +16,7 @@ license:
 licensor:
   name: Quaker Oats
   affiliation: https://www.quakeroats.com/
-  email: 
+  email:
 okh-manifest-version: 1.0.0
 date-created: 2023-08-01
 date-updated: 2023-08-01
@@ -34,7 +34,7 @@ development-stage: product
 documentation-home: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
 ## Helpful schema added properties
 
-bom: 
+bom:
   1/2 Cup(s) (1 stick) plus 6 tablespoons butter, softened
   3/4 Cup(s) firmly packed brown sugar
   1/2 Cup(s) granulated sugar
@@ -107,6 +107,6 @@ making-instructions:
   - path: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
     title: "Vanishing Oatmeal Raisin Cookies"
 maintenance-instructions:
-health-safety-notice: 
+health-safety-notice:
 standards-used:
 
