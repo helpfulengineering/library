@@ -1,0 +1,78 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/helpfulengineering/OKF-Schema/main/okh-schema/okh.schema.json
+
+date-created: 2019-10-15
+
+manifest-author:
+  name:  Joel T. Collins
+  affiliation: University of Bath
+  email: "j.collins@bath.ac.uk"
+
+manifest-language: English-UK
+
+documentation-language: English-UK
+
+
+# Properties
+
+title: OpenFlexure Microscope
+
+description: |
+    The OpenFlexure Microscope is a  3D printable microscope, including a precise mechanical stage to move the sample and focus the optics.  There are many different options for the optics, ranging from a webcam lens to a 100x, oil immersion objective.
+
+intended-use: Microscopy for research applications, university teaching, outreach, or schools
+
+keywords:
+  - open science
+  - microscopy
+  - fluorescence
+  - raspberry pi
+  - arduino
+
+project-link: https://openflexure.org/projects/microscope/
+
+contact:
+  name: Richard Bowman
+  affiliation: University of Bath
+  email: "richard.bowman@glasgow.ac.uk"
+  social:
+    - platform: Twitter
+      user-handle: "@OpenFlexure"
+
+version: 7.0
+
+development-stage: stable
+
+made: true
+
+made-independently: true
+
+license:
+  hardware:  CERN-OHL-S-2.0
+  documentation: GPL-3.0
+  software: GPL-3.0
+
+licensor:
+  name: Richard Bowman
+  affiliation: University of Glasgow
+  email: "richard.bowman@glasgow.ac.uk"
+
+
+# Documentation
+
+documentation-home: https://build.openflexure.org/openflexure-microscope/latest/docs/
+
+archive-download: https://build.openflexure.org/openflexure-microscope/latest/all
+
+design-files:
+  - path: https://build.openflexure.org/openflexure-microscope/latest
+    title: /openflexure-microscope/latest
+
+making-instructions:
+  - path: https://build.openflexure.org/openflexure-microscope/latest/docs/
+    title: OpenFlexure Microscope - Assembly Instructions
+
+software:
+  - path: https://gitlab.com/openflexure/openflexure-microscope-server
+    title: openflexure-microscope-server
+
+image: https://openflexure.org/assets/ofm-photos/ofm_6.1.5_wide.jpg

@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/helpfulengineering/OKF-Schema/main/okh-schema/okh.schema.json
+
+title: Ghanaian Sugar bread
+description: Recipe for making a local Ghanaian sugar bread
+keywords:
+  - bread
+  - ghanaian
+made: true
+made-independently: true
+okh-manifest-version: 1.0.0
+date-updated: 2023-11-28
+manifest-author:
+  name: Elijah Ahianyo
+  email: elijahahianyo@gmail.com
+manifest-language: en-GH
+contact:
+  name: Elijah Ahianyo
+  affiliation: Helpful Engineering
+  email: elijahahianyo@gmail.com
+  social:
+    - platform: Discord
+      user-handle: "@iameli"
+bom: Flour, sugar, butter, nutmeg, butter-flavor, salt, water yeast, plastic wrap
+tool-list: "rolling pin, loaf pan, cup, oven, "
+making-instructions:
+  - path: https://sweetadjeley.com/recipe/homemade-ghana-sugar-bread/
+    title: Making the bread

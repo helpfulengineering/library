@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/helpfulengineering/OKF-Schema/main/okw-schema/okw.schema.json
+
 title: Generic Grocery
 contact: Robert L. Read, PhD, read.robert@gmail.com
 
@@ -15,10 +17,6 @@ licensor: Robert L. Read
 
 
 # # Documentation
-
-documentation-home:                
-
-archive-download: 
 
 # # Core Matchable Work
 
@@ -66,16 +64,3 @@ supply-atoms:
   - identifier: Q179731
     description: baking soda
     link: https://www.wikidata.org/wiki/Q179731
-
-
-# 'product-atoms' are the things that the OKW know how to make without an OKH
-# can make a-priori. This assumes it requires no additional supplies or
-# inputs. It may take more time to supply an product-atom than an supply-atom.
-product-atoms: 
-
-# tool-list atoms are used to make things specified with an OKH
-tool-list-atoms: 
-
-# These defines "processes" which can be carried out at the facility.
-# Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
-processes: 
