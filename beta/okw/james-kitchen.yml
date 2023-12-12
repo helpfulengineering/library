@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/helpfulengineering/OKF-Schema/main/okw-schema/okw.schema.json
+
 title: James Kitchen
 contact: James Butler Jbutler@helpfulengineering.org
 
@@ -15,10 +17,6 @@ licensor: James Butler
 
 
 # # Documentation
-
-documentation-home:                
-
-archive-download: 
 
 # # Core Matchable Work
 
@@ -78,7 +76,6 @@ tool-list-atoms:
 
 # These defines "processes" which can be carried out at the facility.
 # Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
-processes: 
 #  - identifier: Q211387
 #   description: soldering of electronic components, through-hole soldering in general, some smd soldering and perfboard
 #   link: https://www.wikidata.org/wiki/Q211387

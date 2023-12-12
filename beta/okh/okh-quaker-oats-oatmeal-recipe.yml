@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/helpfulengineering/OKF-Schema/main/okh-schema/okh.schema.json
+
 title: Vanishing Oatmeal Raisin Cookies
 description: This recipe for Quaker Oats oatmeal raisin cookies is a yummy way
   to eat your oats. Whether you make them into cookies or bar cookies, vanishing
@@ -8,7 +10,6 @@ intended-use: Joy and happiness in moderation
 keywords:
   - cookie
 project-link: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
-image: 
 made: true
 made-independently: true
 license:
@@ -16,7 +17,6 @@ license:
 licensor:
   name: Quaker Oats
   affiliation: https://www.quakeroats.com/
-  email: 
 okh-manifest-version: 1.0.0
 date-created: 2023-08-01
 date-updated: 2023-08-01
@@ -98,7 +98,6 @@ product-atom:
   identifier: Q16682389
   description: Oatmeal raisin cookie
 
-bom-output-atoms:
 
 ## end of added properties
 
@@ -106,7 +105,4 @@ bom-output-atoms:
 making-instructions:
   - path: https://www.quakeroats.com/cooking-and-recipes/vanishing-oatmeal-raisin-cookies
     title: "Vanishing Oatmeal Raisin Cookies"
-maintenance-instructions:
-health-safety-notice: 
-standards-used:
 
