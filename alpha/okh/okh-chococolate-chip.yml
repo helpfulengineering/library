@@ -33,25 +33,40 @@ documentation-home: https://github.com/helpfulengineering/library
 
 bom: 250g cacao butter, 200g cacao liquor or cacao paste, 1/2 cup maple syrup plus an extra 2 tbsp, 1/2 tsp vanilla powder, pinch salt
 
-
 bom-atoms:
+  - identifier: Q251106
+    description: cacao butter (250g)
+    link: https://www.wikidata.org/wiki/Q251106
+  - identifier: Q1721876
+    description: cacao liquor (200g)
+    link: https://www.wikidata.org/wiki/Q1721876
+  - identifier: Q402563
+    description: Maple syrup (1/2 cup + 2 tbsp)
+    link: https://www.wikidata.org/wiki/Q402563
+  - identifier: QH00003
+    description: vanilla powder (1/2 tsp)
+  - identifier: Q11254
+    description: salt (pinch)
+    link: https://www.wikidata.org/wiki/Q11254
 
 
 tool-list: 2 Pots, Silicone Spatula, Mold bar or kisses
 tool-list-atoms:
+  - identifier: Q2366864
+    description: pots (2)
+    link: https://www.wikidata.org/wiki/Q2366864
+  - identifier: Q15148
+    description: Silicone Spatula
+    link: https://www.wikidata.org/wiki/Q15148
+  - identifier:
+    description: Mold bar 
 
 product-atom:
     identifier: Q13229680
     description: chocolate chips
     link: https://www.wikidata.org/wiki/Q1329680
 
-bom-output-atoms:
-  identifier: Q5167099
-  descroption: cookie dough 
-  Link: https://www.wikidata.org/wiki/Q5167099
-
 ## end of added properties
-
 
 making-instructions:
   - path: https://chefcynthialouise.com/how-to-make-chocolate-at-home/

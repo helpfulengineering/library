@@ -1,0 +1,7 @@
+identifier: QH00003
+name: vanilla powder
+description: Vanilla powder is whole vanilla beans ground into a powder, which is ideal for high-heat recipes and visual appeal
+subclass-of:
+  - identifier: Q12008959
+    description: vanilla bean
+    link: https://www.wikidata.org/wiki/Q12008959
