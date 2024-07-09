@@ -1,0 +1,64 @@
+contact: Riya Shetty, ymir@google.com
+
+contributors: Riya Shetty
+
+version: 0.1
+
+development-stage: early
+
+# # License
+
+# license: any(include('license-item'), list(include('license-item')))  # At least one license is required | The format should be an SPDX identifier. See https://spdx.org/licenses/hardware: [value] # recommended | The license under which the hardware is released
+license: AGPL 3.0 https://www.gnu.org/licenses/agpl-3.0.en.html  
+licensor: Riya Shetty
+
+
+# # Documentation
+
+documentation-home: https://www.pubinv.org/               
+
+archive-download: 
+
+# # Core Matchable Work
+
+# 'inventory-atoms' are the things which this OKW either expects to have in inventory
+inventory-atoms:
+  - identifier: Q3834994
+    description: 3D printer
+    link: https://www.wikidata.org/wiki/Q3834994
+  - identifier: Q1340591
+    description: filaments
+    link: https://www.wikidata.org/wiki/Q1340591
+  - identifier: Q12408
+    description: calipers
+    link: https://www.wikidata.org/wiki/Q12408
+  - identifier: Q142274
+    description: sandpaper
+    link: https://www.wikidata.org/wiki/Q142274
+    
+# 'product-atoms' are the things that the OKW know how to make without an OKH
+# can make a-priori. This assumes it requires no additional supplies or
+# inputs. It may take more time to supply an product-atom than an inventory-atom.
+product-atoms: 
+  - identifier: 
+    description: 3D printed keychain
+    link: 
+  - identifier: 
+    description: 3D printed mouse pad
+    link: 
+
+# tool-list atoms are used to make things specified with an OKH
+tool-list-atoms: 
+  - identifier: Q110779090
+    description: 3D modeling software
+    link: https://www.wikidata.org/wiki/Q110779090
+  - identifier: Q1879849
+    description: soldering station
+    link: https://www.wikidata.org/wiki/Q1879849
+
+# These defines "processes" which can be carried out at the facility.
+# Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
+processes: 
+  - identifier: Q1475300
+    description: Fused Deposition Modeling (FDM)
+    link: https://www.wikidata.org/wiki/Q1475300
