@@ -1,0 +1,110 @@
+title: Almond Butter Chocolate Chip Cookies
+description: This recipe for almond butter chocolate chip cookies, created by Jeremy Scheck, provides a naturally gluten free and dairy free option to enjoy guilt-free cookies in a flash! Also, although the recipe calls for almond butter, feel free to use any nut butter you like - peanut butter, sun butter, cashew butter, macadamia butter all work great for a slightly different flavor palate.
+intended-use: Joy and happiness in moderation
+keywords:
+  - cookie - chocolate - nut butter
+project-link: 
+image: 
+made: true
+made-independently: true
+license:
+  software: No license information available on website, but scheckeats is a registered trademark
+licensor:
+  name: Elon Skolnik
+  affiliation: 
+  email: elonskolnik@gmail.com
+okh-manifest-version: 1.0.0
+date-created: 2023-08-30
+date-updated: 2023-08-30
+manifest-author:
+  name: Elon Skolnik
+  affiliation: Helpful Engineering, a non-profit
+  email: elonskolnik@gmail.com
+manifest-language: en-US
+contact:
+  name: Elon Skolnik
+  affiliation: Helpful Engineering, non-profit
+  email: elonskolnik@gmail.com
+version: 0.0.1
+development-stage: development
+documentation-home:
+## Helpful schema added properties
+
+bom: 
+  16 oz jar almond butter
+  2 eggs
+  1 cup white sugar
+  2 teaspoons baking soda
+  2 teaspoons vanilla extract
+  2 cups of chocolate chips
+  Flaky sea salt
+
+bom-atoms:
+  - identifier: Q4733896
+    description: almond butter
+    link: https://www.wikidata.org/wiki/Q4733896
+  - identifier: Q93189
+    description: eggs
+    link: https://www.wikidata.org/wiki/Q93189
+  - identifier: Q4409456
+    description: white sugar
+    link: https://www.wikidata.org/wiki/Q4409456
+  - identifier: Q179731
+    description: baking soda
+    link: https://www.wikidata.org/wiki/Q179731
+  - identifier: Q10749869
+    description: vanilla extract
+    link: https://www.wikidata.org/wiki/Q10749869
+  - identifier: Q13229680
+    description: chocolate chips
+    link: https://www.wikidata.org/wiki/Q1329680
+  - identifier: Q282694
+    description: sea salt
+    link: https://www.wikidata.org/wiki/Q282694
+  - identifier: Q798500
+    description: parchment paper
+    link: https://www.wikidata.org/wiki/Q798500
+  - identifier: Q117207909
+    description: food storage bag
+    link: https://www.wikidata.org/wiki/Q117207909
+  - identifier: Q117208399
+    description: Shipping supply
+    link: https://www.wikidata.org/wiki/Q117208399
+
+
+tool-list: Oven, Sheet Pan, Spatula, Mixing Bowl
+tool-list-atoms:
+  - identifier: Q36539
+    description: Oven
+    link: https://www.wikidata.org/wiki/Q36539
+  - identifier: Q502335
+    description: Sheet Pan
+    link: https://www.wikidata.org/wiki/Q502335
+  - identifier: Q15148
+    description: Spatula
+    link: https://www.wikidata.org/wiki/Q15148
+  - identifier: Q3007072
+    description: Mixing Bowl
+    link: https://www.wikidata.org/wiki/Q3007072
+  
+
+product-atom:
+  identifier: Q14169302
+  description: Chocolate Chip Cookies 
+  Link: https://www.wikidata.org/wiki/Q14169302
+
+bom-output-atoms:
+  identifier: Q5167099
+  description: cookie dough 
+  Link: https://www.wikidata.org/wiki/Q5167099
+
+## end of added properties
+
+
+making-instructions:
+  - path: https://scheckeats.com/almond-butter-chocolate-chip-cookies/
+    title: "Almond Butter Chocolate Chip Cookies"
+maintenance-instructions:
+health-safety-notice: 
+standards-used:
+
