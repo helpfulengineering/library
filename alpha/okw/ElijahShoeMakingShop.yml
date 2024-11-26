@@ -1,0 +1,77 @@
+contact: Elijah Ahianyo, elijahahianyo@gmail.com
+
+contributors: Elijah Ahianyo
+
+version: 0.1
+
+development-stage: early
+
+# # Documentation
+
+documentation-home: https://www.pubinv.org/               
+
+archive-download: 
+
+# # Core Matchable Work
+
+# 'product-atoms' are the things that the OKW know how to make without an OKH
+# can make a-priori. This assumes it requires no additional supplies or
+# inputs. It may take more time to supply an product-atom than an inventory-atom.
+product-atoms: 
+- identifier: Q4845639
+  description: Brogue Shoe
+  link: https://www.wikidata.org/wiki/Q4845639
+
+# 'inventory-atoms' are the things which this OKW either expects to have in inventory
+inventory-atoms: 
+ - identifier: Q286
+   description: Leather
+   link: https://www.wikidata.org/wiki/Q286
+ - identifier: Q500548
+   description: Glue
+   link: https://www.wikidata.org/wiki/Q500548
+ - identifier: Q1391831
+   description: thread
+   link: https://www.wikidata.org/wiki/Q1391831
+ - identifier: Q18113858
+   description: rubber
+   link: https://www.wikidata.org/wiki/Q18113858
+ - identifier: Q49444
+   description: cork
+   link: https://www.wikidata.org/wiki/Q49444
+ - identifier: Q3775755
+   description: Masking tape
+   link: https://www.wikidata.org/wiki/Q3775755
+
+
+# tool-list atoms are used to make things specified with an OKH
+tool-list-atoms: 
+ - identifier: Q49013
+   description: Sewing Machine
+   link: https://www.wikidata.org/wiki/Q49013
+- identifier: 
+   description: Foot Mould
+   link: 
+- identifier: Q142690
+   description: Sewing Needle
+   link: https://www.wikidata.org/wiki/Q142690
+- identifier: Q25294
+   description: Hammer
+   link: https://www.wikidata.org/wiki/Q25294
+
+
+# These defines "processes" which can be carried out at the facility.
+# Note for example, "sewing" is a WikiData process: https://www.wikidata.org/wiki/Q652122
+processes: 
+- identifier: Q82604
+    description: Design a blueprint for your shoe
+    link: https://www.wikidata.org/wiki/Q82604
+  - identifier: Q211387
+    description: Sewing 
+    link: https://www.wikidata.org/wiki/Q211387
+  - identifier: Q211387
+    description: Assembling the Shoe
+    link: https://www.wikidata.org/wiki/Q3625549
+  - identifier: 
+    description: Add finishing 
+    link: 
